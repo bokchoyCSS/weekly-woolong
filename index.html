@@ -37,7 +37,7 @@
   nav a{flex:1 1 auto;text-align:center;text-decoration:none;padding:8px 6px;font-size:12px;font-weight:700;letter-spacing:1px;border-right:1px solid var(--green-dim);text-transform:uppercase;}
   nav a:last-child{border-right:none;}
   nav a.astro{color:var(--blue);} nav a.earth{color:var(--teal);} nav a.econ{color:var(--yellow);}
-  nav a.gate{color:var(--green);} nav a.bounty{color:var(--pink);} nav a.mpu{color:var(--red);} nav a.arch{color:var(--green-dim);}
+  nav a.gate{color:var(--green);} nav a.bounty{color:var(--pink);} nav a.irsi{color:var(--red);} nav a.arch{color:var(--green-dim);}
   nav a.citizen{color:var(--orange);} nav a.biz{color:var(--purple);}
   nav a.food{color:var(--food);}
   nav a:hover{color:#000;background:var(--yellow);}
@@ -62,7 +62,7 @@
   .block.econ{border-color:var(--yellow);} .block.econ .hd{color:var(--yellow);border-color:var(--yellow);}
   .block.gate .hd{color:var(--green);}
   .block.bounty{border-color:var(--pink);} .block.bounty .hd{color:var(--pink);border-color:var(--pink);}
-  .block.mpu{border-color:var(--red);} .block.mpu .hd{color:var(--red);border-color:var(--red);}
+  .block.irsi{border-color:var(--red);} .block.irsi .hd{color:var(--red);border-color:var(--red);}
   .block.citizen{border-color:var(--orange);} .block.citizen .hd{color:var(--orange);border-color:var(--orange);}
   .block.biz{border-color:var(--purple);} .block.biz .hd{color:var(--purple);border-color:var(--purple);}
   .block.food{border-color:var(--food);} .block.food .hd{color:var(--food);border-color:var(--food);}
@@ -73,7 +73,7 @@
   .teaser .t{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.15;margin:2px 0;}
   .teaser p{font-family:var(--serif);font-size:13px;color:var(--green-dim);}
   .teaser.astro .k{color:var(--blue);} .teaser.earth .k{color:var(--teal);} .teaser.econ .k{color:var(--yellow);}
-  .teaser.gate .k{color:var(--green);} .teaser.bounty .k{color:var(--pink);} .teaser.mpu .k{color:var(--red);}
+  .teaser.gate .k{color:var(--green);} .teaser.bounty .k{color:var(--pink);} .teaser.irsi .k{color:var(--red);}
   .teaser.citizen .k{color:var(--orange);} .teaser.biz .k{color:var(--purple);}
   .teaser.food .k{color:var(--food);}
 
@@ -140,7 +140,7 @@
   .blab{fill:var(--red);font-family:var(--mono);font-size:4px;}
   .coords{font-size:10px;color:var(--red);white-space:nowrap;overflow:hidden;background:#000;border:1px solid var(--red);border-top:none;}
   .coords span{display:inline-block;padding-left:100%;animation:scroll 24s linear infinite;}
-  .mpuvoice{font-family:var(--serif);font-style:italic;color:var(--green-dim);font-size:14px;padding:8px 4px;border:1px solid var(--red);border-top:none;}
+  .irsivoice{font-family:var(--serif);font-style:italic;color:var(--green-dim);font-size:14px;padding:8px 4px;border:1px solid var(--red);border-top:none;}
   .ftable{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
   .ftable th,.ftable td{border:1px solid var(--red);padding:4px 6px;text-align:left;}
   .ftable th{color:var(--red);}
@@ -168,14 +168,14 @@
   <header class="masthead">
     <div class="newburst">NEW!<br>VOL.1</div>
     <h1 onclick="go('home')">The Weekly Woolong</h1>
-    <div class="tag">"The n1 paper around the solar system"</div>
+    <div class="tag">"The n1 rising paper around the solar system"</div>
     <div class="meta">
       <span>VOL. 1 · NO. 1 · INAUGURAL LAUNCH EDITION</span>
       <span id="updated">LAST UPDATED: —</span>
     </div>
   </header>
 
-  <div class="ticker"><span><b>BREAKING:</b> WOOLONG CLEARS FIRST SETTLEMENT WEEK · MARS RELAY SATELLITE LIVE, EARTH BACK ON AIR · <b>MPU:</b> 4 IMPACTS FORECAST THIS CYCLE — CHECK YOUR SECTOR · ISSP OPENS COWBOY REGISTRATION · GINA MOTORS SHIPS FIRST MARS-BUILT MONO-WHEEL · OKONKWO, 19, TAKES THE HEXACHESS OPEN · PIPPU COLA DOWN · GANYMEDE GATE AT HALF CAPACITY · &nbsp;&nbsp;</span></div>
+  <div class="ticker"><span><b>BREAKING:</b> WOOLONG CLEARS FIRST SETTLEMENT WEEK · MARS RELAY SATELLITE LIVE, EARTH BACK ON AIR · <b>IRSI:</b> 4 IMPACTS FORECAST THIS CYCLE — CHECK YOUR SECTOR · ISSP OPENS COWBOY REGISTRATION · GINA MOTORS SHIPS FIRST MARS-BUILT MONO-WHEEL · OKONKWO, 19, TAKES THE HEXACHESS OPEN · PIPPU COLA DOWN · GANYMEDE GATE AT HALF CAPACITY · &nbsp;&nbsp;</span></div>
 
   <nav>
     <a class="astro" data-go="astro" onclick="go('astro')">Astro-Politics</a>
@@ -185,7 +185,7 @@
     <a class="gate" data-go="gate" onclick="go('gate')">GATE Protocol</a>
     <a class="bounty" data-go="bounty" onclick="go('bounty')">Bounty</a>
     <a class="citizen" data-go="citizen" onclick="go('citizen')">Citizen Story</a>
-    <a class="mpu" data-go="mpu" onclick="go('mpu')">MPU</a>
+    <a class="irsi" data-go="irsi" onclick="go('irsi')">Independent Ring of Satellite Intelligence</a>
     <a class="food" data-go="food" onclick="go('food')">Cookbook</a>
     <a class="arch" data-go="arch" onclick="go('arch')">Archive</a>
   </nav>
@@ -200,7 +200,7 @@
         <div class="teaser citizen" data-tease="citizen" onclick="go('citizen')"><div class="k">Citizen Story</div><div class="t">Mara Okonkwo, 19, Won the HexaChess Open With an Engine She Wrote in a Maintenance Bay</div><p>She works nights on the relay. She taught herself. ▸</p></div>
         <div class="teaser econ" data-tease="econ" onclick="go('econ')"><div class="k">Economy</div><div class="t">The Woolong Holds. Nobody Exhales.</div><p>One week in and the new currency hasn't collapsed yet. ▸</p></div>
         <div class="teaser bounty" data-tease="bounty" onclick="go('bounty')"><div class="k">★ (NEW!) Bounty Program</div><div class="t">First 40 Cowboy Badges Issued; Board Already Crowded</div><p>Catch them alive, get paid. New listings posted. ▸</p></div>
-        <div class="teaser mpu" data-tease="mpu" onclick="go('mpu')"><div class="k">MPU — Live Forecast</div><div class="t">Four Impacts This Cycle. It Knows Where. It Always Does.</div><p>Real-time map and countdown. ▸</p></div>
+        <div class="teaser irsi" data-tease="irsi" onclick="go('irsi')"><div class="k">Independent Ring of Satellite Intelligence — Live Forecast</div><div class="t">Four Impacts This Cycle. It Knows Where. It Always Does.</div><p>Real-time map and countdown. ▸</p></div>
         <div class="teaser earth" data-tease="earth" onclick="go('earth')"><div class="k">Earth Politics</div><div class="t">What's Left of Geneva Votes to Keep the Lights On Another Quarter</div><p>The motion passed. There was no one to vote against it. ▸</p></div>
         <div class="teaser gate" data-tease="gate" onclick="go('gate')"><div class="k">GATE Protocol</div><div class="t">Ganymede Gate Reopens at Reduced Capacity</div><p>"Watch the scans," ISSP advises. ▸</p></div>
         <div class="teaser food" onclick="go('food')"><div class="k">The Foodbook</div><div class="t">Bell Peppers and Beef — the Official Special (Beef Optional, As Ever)</div><p>The one page the satellite doesn't touch. ▸</p></div>
@@ -280,9 +280,9 @@
         </div></div>
       </section>
 
-      <!-- MPU -->
-      <section class="view" data-v="mpu">
-        <div class="block mpu"><div class="hd"><span>MPU — Impact Forecast &amp; Earth Mapping</span><span class="blink">● LIVE</span></div><div class="body" style="padding:8px;">
+      <!-- IRSI -->
+      <section class="view" data-v="irsi">
+        <div class="block irsi"><div class="hd"><span>Independent Ring of Satellite Intelligence — Impact Forecast &amp; Earth Mapping</span><span class="blink">● LIVE</span></div><div class="body" style="padding:8px;">
           <div class="countdown">NEXT IMPACT IN <b id="cd">--:--:--</b> · SECTOR <span id="sector">—</span></div>
           <div class="mapbox">
             <svg viewBox="0 0 360 180" preserveAspectRatio="xMidYMid meet">
@@ -299,7 +299,7 @@
             </svg>
           </div>
           <div class="coords"><span id="coordfeed">ACQUIRING COORDINATES…</span></div>
-          <div class="mpuvoice" id="mpuline">Glad to be of service — MPU</div>
+          <div class="irsivoice" id="irsiline">Glad to be of service — Independent Ring of Satellite Intelligence</div>
           <table class="ftable"><thead><tr><th>SECTOR</th><th>LAT</th><th>LON</th><th>ETA</th></tr></thead><tbody id="ftbody"></tbody></table>
           <p style="font-size:11px;color:var(--green-dim);margin-top:8px;font-family:var(--mono);">Map is a built-in SVG so impacts plot on real coordinates with no external asset. Swap in any licensed map raster on deploy if you want photographic terrain.</p>
         </div></div>
@@ -307,7 +307,7 @@
 
       <!-- COOKBOOK / FOODBOOK (static — not AI-updated) -->
       <section class="view" data-v="food">
-        <div class="block food"><div class="hd"><span>The Foodbook</span><span>KEPT BY HAND · NOT BY MPU</span></div><div class="body">
+        <div class="block food"><div class="hd"><span>The Foodbook</span><span>KEPT BY HAND · NOT BY IRSI</span></div><div class="body">
           <div class="foodnote">The one page the satellite doesn't touch. No forecasts, no bounties, no markets — just the recipes that keep a crew alive between jobs. Updated by a person, when a person feels like it.</div>
 
           <div class="recipe" style="border-top:none;padding-top:0;">
@@ -396,7 +396,7 @@
       <section class="view" data-v="arch">
         <div class="arcnote"><b>BANDWIDTH KEPT ARCHIVE.</b> The net barely survived the Gate, so we keep only <b>three weeks</b>. When a fourth issue publishes, the oldest is purged — gone on both ends. Bandwidth is spared up here and down there. Read them while they're here.</div>
         <div class="issue"><div class="ih"><span>VOL.1 · NO.1 · INAUGURAL EDITION</span><span class="exp" id="exp1">EXPIRES IN —</span></div><div class="ib">Mars ratifies Tharsis Accord · Gina Motors ships first mono-wheel · Okonkwo takes the HexaChess Open · The Woolong holds · First cowboy badges issued · Four impacts forecast · <a onclick="go('home')">read issue ▸</a></div></div>
-        <div class="issue empty"><div class="ih"><span>VOL.1 · NO.2</span><span>SLOT OPEN</span></div><div class="ib">Awaiting next broadcast. MPU files weekly.</div></div>
+        <div class="issue empty"><div class="ih"><span>VOL.1 · NO.2</span><span>SLOT OPEN</span></div><div class="ib">Awaiting next broadcast. IRSI files weekly.</div></div>
         <div class="issue empty"><div class="ih"><span>VOL.1 · NO.3</span><span>SLOT OPEN</span></div><div class="ib">Awaiting next broadcast.</div></div>
       </section>
 
@@ -438,8 +438,8 @@
   <footer>
     <span class="construction">⚠ THIS PAGE IS UNDER (AGENTIC) CONSTRUCTION · READ MORE ON OUR USE OF AI-AGENTS ⚠</span><br>
     Best viewed at 800×600 or whatever works !<br>
-    © 2026 THE WEEKLY WOOLONG · A work of Technological advancements by x · kept updated by the MPU network and agentic engineers <br>
-    <a onclick="return false">guestbook</a> · <a onclick="return false">webring</a> · <a onclick="return false">email the editors</a> · <a onclick="go('mpu')">about MPU</a> · <a onclick="go('about')">AI &amp; the environment</a><br>
+    © 2026 THE WEEKLY WOOLONG · A work of Technological advancements by x · kept updated by the IRSI network and agentic engineers <br>
+    <a onclick="return false">guestbook</a> · <a onclick="return false">webring</a> · <a onclick="return false">email the editors</a> · <a onclick="go('irsi')">about IRSI</a> · <a onclick="go('about')">AI & the environment</a><br>
     <span style="color:var(--green);">Enjoy your visit, fellow bandwith user</span>
   </footer>
 
@@ -489,7 +489,7 @@
   function moveStocks(){STK.forEach(function(s){s.pp=s.p;s.p=Math.max(10,s.p*(1+(Math.random()-0.48)*0.08));});drawStocks();}
   drawStocks();setInterval(moveStocks,2500);
 
-  // MPU IMPACT FORECAST — plotted on real lat/lon (x=lon+180, y=90-lat)
+  // IRSI IMPACT FORECAST — plotted on real lat/lon (x=lon+180, y=90-lat)
   window.IMP=[
     {sector:'NORTH AMERICAN SHELF',lat:41.9,lon:-87.6,mins:0.6},
     {sector:'SAHARA BASIN',lat:23.4,lon:12.1,mins:3.1},
@@ -510,12 +510,12 @@
       return '<tr><td>'+im.sector+'</td><td>'+Math.abs(im.lat)+'°'+ns+'</td><td>'+Math.abs(im.lon)+'°'+ew+'</td><td>T-'+im.mins+'m</td></tr>';}).join('');
     document.getElementById('coordfeed').textContent=cf+cf;})();
   var ix=0,tgt=Date.now()+IMP[0].mins*60000;
-  var LINES=['Glad to be of service to the bandwith — MPU',
-    'Can y\'all please donate coffeee ngl I\'m doing too much work keeping this bandwidth online 24/7 — MPU',
-    'I need to get paid more for this ! — MPU',
-    'Meteor showers look heavy today ! — MPU'];
+  var LINES=['Glad to be of service to the bandwith — IRSI',
+    'Can y\'all please donate coffeee ngl I\'m doing too much work keeping this bandwidth online 24/7 — IRSI',
+    'I need to get paid more for this ! — IRSI',
+    'Meteor showers look heavy today ! — IRSI'];
   function cd(){var L=tgt-Date.now();
-    if(L<=0){ix=(ix+1)%IMP.length;tgt=Date.now()+IMP[ix].mins*60000;L=tgt-Date.now();document.getElementById('mpuline').textContent=LINES[ix%LINES.length];}
+    if(L<=0){ix=(ix+1)%IMP.length;tgt=Date.now()+IMP[ix].mins*60000;L=tgt-Date.now();document.getElementById('irsiline').textContent=LINES[ix%LINES.length];}
     var h=Math.floor(L/3600000),m=Math.floor(L%3600000/60000),s=Math.floor(L%60000/1000);
     document.getElementById('cd').textContent=pad(h)+':'+pad(m)+':'+pad(s);
     document.getElementById('sector').textContent=IMP[ix].sector;}
@@ -566,9 +566,9 @@
           });
           if(window.drawStocks) window.drawStocks();
         }
-        if(d.mpu_forecast && window.IMP){
+        if(d.irsi_forecast && window.IMP){
           window.IMP.length = 0;
-          d.mpu_forecast.forEach(function(f){ window.IMP.push({sector:f.sector,lat:f.lat,lon:f.lon,mins:f.eta_minutes}); });
+          d.irsi_forecast.forEach(function(f){ window.IMP.push({sector:f.sector,lat:f.lat,lon:f.lon,mins:f.eta_minutes}); });
         }
         if(d.issue_meta){
           var ed=document.getElementById('updated');

@@ -83,7 +83,7 @@
       "trend": "up"
     }
   ],
-  "mpu_forecast": [
+  "irsi_forecast": [
     {
       "sector": "Ganymede",
       "lat": 50.1,

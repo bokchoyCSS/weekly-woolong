@@ -2,108 +2,88 @@
   "issue_meta": {
     "volume": 1,
     "issue": 5,
-    "edition_label": "The Weekly Woolong"
+    "edition_label": "System Edition"
   },
   "articles": [
     {
       "section": "astro",
-      "headline": "Mars flexes on Ganymede, infrastructure style",
+      "headline": "Mars Seizes Ganymede Cargo Ship Amid Rising Tensions",
       "byline": "� Woolong Wire / Astro",
-      "body": "Mars isn't playing lowkey anymore. With Ganymede getting cozy with Venus, Mars is ramping up on space infrastructure projects. Resource allocations to these projects are on the rise, reflecting growing tensions with Ganymede.",
-      "image_brief": "WANTED: Illustration of Martian spaceports with construction cranes, cold landscape, red-dust tint."
+      "body": "Mars has seized a cargo ship originating from Ganymede in a zone both planets have repeatedly disputed, escalating already fraught tensions. \"This act is an aggressive overreach,\" stated Liora Bekele, spokesperson for Ganymede's interplanetary affairs. The Martian government, however, defended the action as a necessary enforcement of territorial rights. The incident contributes to Mars' growing reputation for assertive territorial actions, drawing international scrutiny.",
+      "image_brief": "WANTED: a dramatic still of a Martian patrol vessel alongside a large cargo ship in deep space. Emphasize tension."
     },
     {
       "section": "earth",
-      "headline": "Meteor storm shakes West Australia, migration spikes",
+      "headline": "Meteor Showers Devastate Pacific Rim, Prompting Calls for Action",
       "byline": "� Woolong Wire / Earth",
-      "body": "Meteor showers in Western Australia hit hard, leading to infrastructure damage and pushing folks to migrate. Economic burden from repairs also rises. Ts got wild quick.",
-      "image_brief": "WANTED: Sketch of a meteor shower over Western Australia, with damaged structures and people migrating."
+      "body": "Intense meteor showers have once again struck Earth, this time causing significant damage along the Pacific Rim. The meteorological event has reignited discussions on planet-wide defense systems. \"We need to prioritize better protection for vulnerable regions,\" stated Dr. Hiroshi Yamada, lead scientist at the Earth Meteor Defense Organization. The impacted areas are under emergency response, with discussions underway about relocating at-risk populations.",
+      "image_brief": "WANTED: an evocative shot of a meteor trail over the Pacific Ocean at dawn, with city lights visible below."
     },
     {
       "section": "econ",
-      "headline": "Woolong bounce-back shows cautious hope",
+      "headline": "First Solar Bank Reaffirms Stability, Shares Surge",
       "byline": "� Woolong Wire / Econ",
-      "body": "Confidence in the Woolong is starting to peek up, as ISSP steps in with economic measures. The currency's newfound resilience has traders feeling cautiously optimistic. ISSP might have lowkey eaten this week.",
-      "image_brief": "WANTED: A graph of Woolong's currency trend with a subtle upward curve, ISSP insignia in corner."
+      "body": "First Solar Bank has announced its financial stability following a comprehensive investigation, leading to a significant rebound in its share prices. \"Our investors can rest assured that First Solar Bank remains a pillar of fiscal strength,\" CEO Tanaka Ming said. The announcement has spurred a rise in market confidence, with the broader stock market experiencing an uptick. Analysts attribute this resurgence to restored trust among investors.",
+      "image_brief": "WANTED: a clean, professional shot of First Solar Bank's headquarters, bustling with business activity."
     },
     {
       "section": "gate",
-      "headline": "Bounty on Ganymede technician tweaks Gate security",
+      "headline": "Ganymede Gate Under Scrutiny Amid Sabotage Suspicions",
       "byline": "� Woolong Wire / Gate",
-      "body": "An open bounty on a technician suspected of sabotaging the Ganymede Gate is live, drawing bounty hunters from all corners. Ganymede's Gate security is tightening in response. So it's like, fr fr, watch your step out there.",
-      "image_brief": "WANTED: Dramatic shot of Ganymede Gate with bounty hunters lurking, tense atmosphere."
-    },
-    {
-      "section": "bounty",
-      "headline": "New cowboys snag \"The Lighthouse\", Tharsis steadies",
-      "byline": "� Woolong Wire / Bounty",
-      "body": "Rufus \"The Lighthouse\" Obara is no longer lighting up the bounty scene. Newly formed bounty team nabbed him, steadying the Tharsis line routes. Eased some tension out there, easy now.",
-      "image_brief": "WANTED: Portrait of a gritty bounty hunter team with a subdued Rufus \"The Lighthouse\" Obara, Tharsis line in background."
-    },
-    {
-      "section": "mpu",
-      "headline": "MPU error throws meteor trust into the void",
-      "byline": "� Woolong Wire / MPU",
-      "body": "Our bad. MPU prediction error about Earth's meteor trajectory caused a stir and a dip in public trust. Suggestions for algorithm overhauls are on the table.",
-      "image_brief": "WANTED: Techy visualization of MPU prediction models with a meteor path overlay, glitchy aesthetic."
+      "body": "Ongoing inspections at the Ganymede Gate have heightened as potential syndicate sabotage remains under suspicion. \"We are investigating all possibilities to ensure the security of our gate operations,\" said Gate Security Chief Elena Seville. These disruptions have further delayed freight schedules and exacerbated economic tensions with Mars, which relies heavily on the gate's operations for trade.",
+      "image_brief": "WANTED: a high-resolution image of Ganymede Gate under inspection, with officials and security presence."
     },
     {
       "section": "citizen",
-      "headline": "Mars' tech buzz, Okonkwo joins HexaChess hype",
+      "headline": "Belt Miner Asha Patel Honored for Heroic Rescue",
       "byline": "� Woolong Wire / Citizen",
-      "body": "Mara Okonkwo's switch to HexaChess is giving techies on Mars something to cheer about, boosting hopes for innovation potential. Fed the community's futuristic vibes fr.",
-      "image_brief": "WANTED: Vibrant scene of Mara Okonkwo in an advanced HexaChess game, tech motifs in background."
+      "body": "Asha Patel, a miner from the Asteroid Belt, has been awarded for her innovative safety measures that resulted in the rescue of her crew during a recent asteroid collapse. Patel's quick thinking and leadership are credited with preventing potential fatalities. \"I'm just glad I was able to help my crew,\" Patel remarked modestly. This has led to improved safety protocols and increased demand for mining safety officers in the Belt.",
+      "image_brief": "WANTED: an inspiring portrait of Asha Patel in her miner's gear, standing confidently in front of an asteroid mining site."
     },
     {
       "section": "biz",
-      "headline": "Blue and Venus seal the deal; Ganymede stocks soar",
+      "headline": "Helios Solar Freight and Mars Coalition Forge Logistics Partnership",
       "byline": "� Woolong Wire / Biz",
-      "body": "Ganymede Blue's new export deal with Venus has their stocks climbing. The aquaculture sector's image is getting a steezy upgrade in the process, and Ganymede-Venus ties are solid.",
-      "image_brief": "WANTED: Artistic rendering of Ganymede Blue and Venus exchanging crates of aquaculture goods, stock market tickers."
+      "body": "In a strategic move to enhance logistics amid ongoing gate concerns, Helios Solar Freight has partnered with the Mars Coalition. \"This collaboration is set to streamline off-world transport,\" said Helios CEO, Vincent Zhou. The agreement aims to solidify Mars' logistic capabilities and has positively influenced Helios' stock performance.",
+      "image_brief": "WANTED: a futuristic depiction of a Helios Solar Freight transport craft landing on Mars, with collaborative logos visible."
     }
   ],
   "bounties": [
     {
-      "name": "Ganymede Technician",
-      "line": "Suspected of sabotage at Ganymede Gate, alive only.",
+      "name": "Alton Sedgwick",
+      "line": "Wanted for alleged sabotage linked to Ganymede Gate disruptions.",
       "reward": 50000,
       "status": "open"
     }
   ],
   "oldmen_column": {
-    "headline": "The Good Old Rants About Space Fish and Wrenches",
-    "body": "Ah, space-faring. Once a young man's game, now it's for anyone with a rocket and a wrench. Back in our day, we didn't have Venusian export deals or these high-tech chess games. Nope, just pure grit and a sack of woolong. New bounty hunters caught that Obara fella, you say? Well, it's about time. We're still waiting for someone to explain the excitement over a fancy cowpond on Ganymede. Anyway, here's hoping Mars doesn't decide to start a turf war with Ganymede over who builds more spaceports. Stay easy out there."
-  },
-  "woolong_per": {
-    "USD": 100,
-    "EUR": 108,
-    "JPY": 0.65,
-    "GBP": 127
+    "headline": "Remembering the Space Crates",
+    "body": "You know, I remember when cargo crates weren't just floating debris between Mars and Ganymede. Those crates meant something! Harold here says they once carried Martian wine. But Olaf, didn't you claim it was Ganymede cheese last week? It's a wonder they ever arrived. Anyway, think about how secure things were back when security was just a rusty padlock, and no one thought about sabotage. Ah, those were the days!"
   },
   "stocks": [
     {
       "ticker": "GINA",
-      "price": 56.9,
-      "trend": "up"
+      "price": 85,
+      "trend": "down"
     },
     {
       "ticker": "HEXA",
-      "price": 118.4,
+      "price": 70,
       "trend": "up"
     },
     {
       "ticker": "PIPP",
-      "price": 37.2,
-      "trend": "down"
+      "price": 60,
+      "trend": "up"
     }
   ],
-  "mpu_forecast": [
+  "irsi_forecast": [
     {
-      "sector": "meteor",
-      "lat": -27.0,
-      "lon": 133.0,
-      "eta_minutes": 0,
-      "severity": "severe"
+      "sector": "East Asia",
+      "lat": 35.0,
+      "lon": 139.0,
+      "eta_minutes": 120,
+      "severity": "moderate"
     }
   ]
 }

@@ -83,7 +83,7 @@
       "trend": "up"
     }
   ],
-  "mpu_forecast": [
+  "irsi_forecast": [
     {
       "sector": "Coral Sea",
       "lat": -15.0,

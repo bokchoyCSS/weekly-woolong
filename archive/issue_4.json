@@ -8,42 +8,42 @@
     {
       "section": "astro",
       "headline": "Mars Tariffs Target Ganymede's Oceanic Trade",
-      "byline": "— Woolong Wire / Astro Desk",
+      "byline": "ï¿½ Woolong Wire / Astro Desk",
       "body": "Mars has introduced new tariffs on oceanic products from Ganymede, escalating economic tensions between the two celestial bodies. The tariffs primarily affect Ganymede's seafood and aquatic exports, critical to its economy. \"Mars must protect its domestic industries,\" stated Lyra Daxton, Mars Trade Representative, citing unfair trade practices as the reason behind the decision. In response, Ganymede's Trade Council is considering forming a trade alliance with Venus. \"Aligning with Venus could offset the impact of these tariffs,\" said Councilor Thane Okoye, suggesting the move could strengthen Ganymede's market position.",
       "image_brief": "WANTED: a dramatic illustration of Martian and Ganymede trade ships in space, with tariff documents floating between them."
     },
     {
       "section": "earth",
       "headline": "Meteor Showers Trigger Emergency Protocols in the Indian Ocean",
-      "byline": "— Woolong Wire / Earth Desk",
+      "byline": "ï¿½ Woolong Wire / Earth Desk",
       "body": "Unexpected meteor showers over the Indian Ocean have caused anomalous sea level shifts, prompting emergency protocols in the region. Coastal communities are experiencing heightened concerns. \"We're closely monitoring the situation and advising all affected areas to remain vigilant,\" said Dr. Mira Patel, head of the Coastal Emergency Response Unit. The phenomenon has led to an increase in migration inquiries from coastal residents seeking safer locations. Authorities continue to assess the impact and provide assistance where necessary.",
       "image_brief": "WANTED: a tranquil yet ominous seascape showing meteor trails above the Indian Ocean, with waves subtly altered."
     },
     {
       "section": "econ",
       "headline": "RedDragon Syndicate's Influence Attempt at First Solar Bank Under ISSP Scrutiny",
-      "byline": "— Woolong Wire / Econ Desk",
+      "byline": "ï¿½ Woolong Wire / Econ Desk",
       "body": "The Inter-Solar System Police (ISSP) is investigating an insider trading scheme by the RedDragon syndicate aimed at manipulating the stock of First Solar Bank. Preliminary findings suggest coordinated efforts to inflate share prices through illicit means. \"We're conducting a thorough investigation to uphold market integrity,\" said Inspector Leo Han of the ISSP's Financial Crimes Division. This investigation has already led to potential stock volatility for First Solar Bank, with market analysts advising caution to investors until the situation stabilizes.",
       "image_brief": "WANTED: a tense boardroom scene with shadowy figures and a First Solar Bank ticker prominently displayed on a digital board."
     },
     {
       "section": "gate",
       "headline": "Extended Closure of Ganymede Gate Disrupts Space Freight",
-      "byline": "— Woolong Wire / Gate Desk",
+      "byline": "ï¿½ Woolong Wire / Gate Desk",
       "body": "The temporary closure of Ganymede Gate has been extended as additional safety inspections are being carried out. The inspections have uncovered previously undetected structural concerns. \"Safety is our highest priority,\" said Gate Authority Spokesperson Maris Takanami. Cargo routes are being rerouted through Europa and Io, causing minor delays in freight operations. Shippers are advised to plan for extended travel times as the inspections continue.",
       "image_brief": "WANTED: a detailed rendering of Ganymede Gate, with engineers examining gate structures under work lights."
     },
     {
       "section": "citizen",
       "headline": "Io's Navid Anwar Innovates in Terraforming with New Soil Recycling Method",
-      "byline": "— Woolong Wire / Citizen Desk",
+      "byline": "ï¿½ Woolong Wire / Citizen Desk",
       "body": "Navid Anwar, a terraforming technician based on Io, has gained recognition for developing a groundbreaking soil recycling method. This innovation promises significant improvements in the sustainability of terraforming processes. \"It's about creating a self-sustaining cycle,\" Anwar explained, demonstrating the method's potential to reduce resource consumption. This development has captured the interest of investors across the Belt, signaling a potential shift towards more efficient terraforming technologies in the future.",
       "image_brief": "WANTED: a portrait of Navid Anwar in his workspace, surrounded by terraforming equipment and soil samples."
     },
     {
       "section": "biz",
       "headline": "SporeTech Makes Breakthrough in Venusian Spore Cloud Control",
-      "byline": "— Woolong Wire / Biz Desk",
+      "byline": "ï¿½ Woolong Wire / Biz Desk",
       "body": "In a significant development for Venus, SporeTech has announced a breakthrough in managing the dense spore clouds that are a hallmark of Venusian weather. This advancement could have far-reaching implications for environmental control on Venus. \"Our technology works by neutralizing spores at the molecular level,\" said Dr. Elise Kana, Chief Scientist at SporeTech. The announcement has bolstered Venusian stocks, and potential collaborations with Earth-based biotech firms are being explored to further expand its applications.",
       "image_brief": "WANTED: an artistic representation of Venus's surface with clear skies and visibly reduced spore clouds, highlighting technological impact."
     }
@@ -77,7 +77,7 @@
       "trend": "up"
     }
   ],
-  "mpu_forecast": [
+  "irsi_forecast": [
     {
       "sector": "Siberian Plate",
       "lat": 72.0,

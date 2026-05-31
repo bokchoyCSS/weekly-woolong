@@ -1,11 +1,11 @@
 {
   "meta": {
     "volume": 1,
-    "issue": 4,
-    "in_world_week": 4,
+    "issue": 5,
+    "in_world_week": 5,
     "in_world_date": "2026 — Year 4 after the Astral Gate accident",
     "real_publish_date": "2026-05-31",
-    "edition_label": "Fourth Edition",
+    "edition_label": "Fifth Edition",
     "masthead_note": "Earth-produced, Mars-relayed via the first colony satellite"
   },
   "economy": {
@@ -21,23 +21,30 @@
       {
         "ticker": "GINA",
         "name": "Gina Motors",
-        "price": 4550,
+        "price": 4600,
         "trend": "up",
-        "note": "Production expansion sees demand growth"
+        "note": "Continued production expansion supporting share growth"
       },
       {
         "ticker": "HEXA",
         "name": "HexaChess",
-        "price": 1005,
+        "price": 1020,
         "trend": "up",
-        "note": "New strategic partnerships announced"
+        "note": "Sustained interest in strategic partnerships"
       },
       {
         "ticker": "PIPP",
         "name": "Pippu Cola",
-        "price": 6400,
+        "price": 6350,
         "trend": "down",
-        "note": "Decline continues amid soft drink competition"
+        "note": "Competition pressures continue to impact sales"
+      },
+      {
+        "ticker": "FSB",
+        "name": "First Solar Bank",
+        "price": 1950,
+        "trend": "up",
+        "note": "Reaffirmed stability brings in investors; shares rebound"
       }
     ]
   },
@@ -77,6 +84,18 @@
         "robbery",
         "freight"
       ]
+    },
+    {
+      "id": "b004",
+      "name": "Saboteur X",
+      "crime": "Suspected in destabilizing Ganymede Gate systems; potential syndicate ties",
+      "reward": 5500000,
+      "status": "open",
+      "posted_issue": 5,
+      "tags": [
+        "sabotage",
+        "syndicate"
+      ]
     }
   ],
   "factions": {
@@ -86,14 +105,14 @@
         "Ganymede",
         "Venus"
       ],
-      "note": "acting like the capital; has the lights, the relay, the money"
+      "note": "acting like the capital; seizing strategic opportunities"
     },
     "Ganymede": {
       "posture": "defiant",
       "tension_with": [
         "Mars"
       ],
-      "note": "walked out of the Tharsis Accord; fringe ocean moon"
+      "note": "further isolated by Mars' aggressive actions"
     },
     "Venus": {
       "posture": "smug",
@@ -112,7 +131,7 @@
       "tension_with": [
         "ISSP"
       ],
-      "note": "early syndicate muscle; watching the new Woolong"
+      "note": "early syndicate muscle; investigating manipulations"
     }
   },
   "locations": {
@@ -122,11 +141,11 @@
     },
     "GanymedeGate": {
       "status": "temporary closure",
-      "note": "further inspections leading to extended shutdown"
+      "note": "suspected sabotage; extended inspections causing delays"
     },
     "Mars": {
       "status": "rising",
-      "note": "land rush, first homegrown factory; hiring boom"
+      "note": "land rush, strategic partnerships forming; hiring boom"
     },
     "Titan": {
       "status": "raw frontier",
@@ -189,7 +208,7 @@
       "name": "Helios Solar Freight",
       "sector": "cargo",
       "canon": false,
-      "state": "the trucks of the system"
+      "state": "partners with Mars Coalition; logistics streamlined"
     },
     {
       "name": "Lumen Relay Co.",
@@ -212,16 +231,17 @@
     {
       "name": "First Solar Bank",
       "sector": "finance",
+      "ticker": "FSB",
       "canon": false,
-      "state": "stabilized post-wobble; restored confidence"
+      "state": "stabilized post-investigation; restored confidence"
     }
   ],
   "characters": [
     {
-      "id": "mpu",
-      "name": "MPU",
+      "id": "irsi",
+      "name": "Independent Ring of Satellite Intelligence",
       "role": "forecast AI / surviving satellite",
-      "state": "missed another impact; under pressure to adjust",
+      "state": "successfully predicted impact, easing pressure",
       "visual": "battered orbital satellite interior; green phosphor readouts; one lens turned toward a wounded Earth"
     },
     {
@@ -258,6 +278,13 @@
       "role": "citizen — Io-based terraforming technician",
       "state": "recognized for soil recycling method",
       "visual": "enthusiastic engineer tinkering with soil samples in a small depot on Io"
+    },
+    {
+      "id": "patel",
+      "name": "Asha Patel",
+      "role": "citizen — Belt miner",
+      "state": "awarded for innovative safety measures",
+      "visual": "determined miner in safety gear, standing amid asteroid rocks with a torch"
     }
   ],
   "threads": [
@@ -265,31 +292,30 @@
       "id": "t_accord",
       "title": "The Tharsis Accord & the Ganymede holdout",
       "status": "developing",
-      "stage": 4,
+      "stage": 5,
       "sections": [
         "astro",
         "gate"
       ],
-      "summary": "Mars applies pressure on Ganymede by increasing gate tolls.",
+      "summary": "Mars intensifies tactics, seizing a Ganymede cargo ship in disputed space.",
       "next_beats": [
-        "Mars applies more pressure via trade",
-        "a third party brokers or exploits"
+        "Ganymede retaliates, escalating tensions",
+        "intervention by an external power"
       ]
     },
     {
       "id": "t_woolong",
       "title": "Will the new Woolong hold?",
-      "status": "developing",
-      "stage": 4,
+      "status": "resolved",
+      "stage": 5,
       "sections": [
         "econ",
         "biz"
       ],
-      "summary": "Slight wobble at First Solar Bank; minor currency dip.",
+      "summary": "First Solar Bank reaffirms stability post-investigation, shares rebound.",
       "next_beats": [
-        "syndicate manipulation attempt",
-        "a bank stabilization",
-        "confidence restored"
+        "a syndicate makes a big play",
+        "helios sides with ISSP"
       ]
     },
     {
@@ -301,103 +327,91 @@
         "bounty",
         "citizen"
       ],
-      "summary": "Rufus \"The Lighthouse\" captured by a bounty hunter. Program gains credibility.",
+      "summary": "New bounty on Ganymede Gate saboteur; cowboy interest rises.",
       "next_beats": [
-        "ISSP vs syndicate friction",
-        "competition among cowboys"
+        "a cowboy challenges RedDragon",
+        "rising fame of cowboy hunters"
       ]
     },
     {
       "id": "t_ganymede_gate",
       "title": "The Ganymede gate is not as stable as they say",
       "status": "developing",
-      "stage": 4,
+      "stage": 5,
       "sections": [
         "gate",
         "econ",
         "earth"
       ],
-      "summary": "Delay cascade affects freight schedules; economic impact noted.",
+      "summary": "Suspected sabotage delays Ganymede Gate reopening.",
       "next_beats": [
-        "a culprit surfaces on the bounty board",
-        "temporary closure considered"
+        "saboteur gets identified",
+        "consolidation of space routes"
       ]
     },
     {
       "id": "t_mars_industry",
       "title": "Mars learns to build for itself",
       "status": "developing",
-      "stage": 4,
+      "stage": 5,
       "sections": [
         "biz",
         "astro",
         "citizen"
       ],
-      "summary": "Tharsis Dome Works announces a hiring boom on Mars.",
+      "summary": "Helios Solar Freight partners with Mars Coalition.",
       "next_beats": [
-        "a supply-chain snag",
-        "a rival on Venus",
-        "expansion of Mars infrastructure"
+        "Mars infrastructure expands",
+        "competition heats up on Venus"
       ]
     },
     {
       "id": "t_showers",
       "title": "The showers are getting worse",
       "status": "background",
-      "stage": 4,
+      "stage": 5,
       "sections": [
-        "mpu",
+        "irsi",
         "earth"
       ],
-      "summary": "Meteor showers over Coral Sea heavier than expected; MPU under review.",
+      "summary": "Meteor showers hit Pacific Rim with force; IRSI regains trust.",
       "next_beats": [
-        "a forecast MPU gets wrong",
-        "a migration surge",
-        "reallocation of resources"
+        "migration patterns start changing",
+        "an unexpected meteor crisis"
       ]
     }
   ],
-  "mpu_forecast": [
-    {
-      "sector": "INDIAN OCEAN",
-      "lat": -20,
-      "lon": 80,
-      "eta_minutes": 2.1,
-      "severity": "severe"
-    },
-    {
-      "sector": "SIBERIAN PLATE",
-      "lat": 65,
-      "lon": 95,
-      "eta_minutes": 5.6,
-      "severity": "moderate"
-    },
+  "irsi_forecast": [
     {
       "sector": "PACIFIC RIM",
       "lat": -29,
       "lon": 139,
-      "eta_minutes": 7.3,
-      "severity": "light"
+      "eta_minutes": 2.1,
+      "severity": "severe"
     },
     {
       "sector": "EAST ASIA",
       "lat": 36,
       "lon": 140,
-      "eta_minutes": 10.4,
+      "eta_minutes": 5.3,
+      "severity": "moderate"
+    },
+    {
+      "sector": "SIBERIAN PLATE",
+      "lat": 65,
+      "lon": 95,
+      "eta_minutes": 7.9,
+      "severity": "light"
+    },
+    {
+      "sector": "INDIAN OCEAN",
+      "lat": -20,
+      "lon": 85,
+      "eta_minutes": 9.4,
       "severity": "moderate"
     }
   ],
   "ledger": {
-    "issue_2": [
-      "Mars applies pressure on Ganymede by increasing gate tolls.",
-      "Meteor showers over the Coral Sea heavier than expected, causing minor damage.",
-      "The First Solar Bank experiences a slight wobble due to syndicate pressure.",
-      "A delay cascade at Ganymede Gate affects freight schedules across the system.",
-      "Rufus \"The Lighthouse\" Obara captured by an unknown bounty hunter.",
-      "MPU missed forecasting a major impact over the Coral Sea, prompting reviews.",
-      "Lila Nguyen, a Belt salvager, discovers rare ore deposit amidst debris, drawing attention.",
-      "Tharsis Dome Works announces a hiring boom on Mars."
-    ],
     "issue_3": [
       "Ganymede makes a strategic countermove by offering freight subsidies to bypass Mars gate tolls.",
       "Meteor showers continue to intensify over East Asia, causing further disruptions in communication.",
@@ -414,9 +428,19 @@
       "RedDragon syndicate attempts to manipulate First Solar Bank's stock through insider trading; ISSP investigates.",
       "Ganymede Gate's temporary closure extended as further inspections are conducted.",
       "The Quiet Brothers narrowly escape capture on Titan; tension mounts among bounty hunters.",
-      "MPU forecasts a severe impact near the Siberian Plate but issues remain with accuracy.",
+      "IRSI forecasts a severe impact near the Siberian Plate but issues remain with accuracy.",
       "Navid Anwar, an Io-based terraforming technician, gains recognition for pioneering a new soil recycling method.",
       "Venusian company, SporeTech, announces a breakthrough in controlling Venusian spore clouds."
+    ],
+    "issue_5": [
+      "Mars intensifies space tensions, seizing a Ganymede cargo ship in a disputed zone.",
+      "Meteor showers continue to wreak havoc, this time hitting the Pacific Rim with force.",
+      "First Solar Bank reaffirms stability post-investigation, shares rebound.",
+      "Ganymede Gate remains under inspection, potential syndicate sabotage suspected.",
+      "New bounty posted for alleged saboteur connected to Ganymede Gate disruptions.",
+      "IRSI successfully predicts a potential impact over East Asia, regaining trust.",
+      "Asha Patel, a Belt miner, awarded for innovative safety measures after rescuing a crew during an asteroid collapse.",
+      "Helios Solar Freight partners with Mars Coalition to streamline off-world logistics amid gate concerns."
     ]
   }
 }
