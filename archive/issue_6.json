@@ -1,0 +1,95 @@
+{
+  "issue_meta": {
+    "volume": 1,
+    "issue": 6,
+    "edition_label": "Weekly Report"
+  },
+  "articles": [
+    {
+      "section": "astro",
+      "headline": "Ganymede Strengthens Ties with Venus as Mars Expands",
+      "byline": "� Woolong Wire / Astro",
+      "body": "Ganymede is countering Mars' aggressive space development projects by forging strategic partnerships with the burgeoning tech sectors on Venus. This move is seen as an attempt to balance the increasing influence of Mars in the solar system. \"We believe in mutually beneficial collaborations that will enhance technological advancements for all involved,\" said Elara Io, spokesperson for the Ganymede Council. The collaboration comes amidst heightened tensions, as Mars persists in its expansionist endeavors, increasing the stakes in the region's geopolitical landscape.",
+      "image_brief": "REQUEST: Art depicting Venusian tech hubs collaboratively engaging with Ganymede representatives, with a backdrop of interplanetary trade routes."
+    },
+    {
+      "section": "earth",
+      "headline": "Meteor Strikes Intensify Earth's Migration Push to Mars",
+      "byline": "� Woolong Wire / Earth",
+      "body": "Increased meteor impacts on Earth are compounding existing migration pressures, prompting a surge in emergency support from Mars. The Martian infrastructure is feeling the strain of this increased influx, with emergency facilities being pushed to their limits. \"We're doing everything we can to assist our fellow Earthlings in this time of need,\" said Martian Infrastructure Minister Tessa Marlowe. The situation highlights both the challenges and opportunities of interplanetary cooperation amid natural disasters.",
+      "image_brief": "NEEDED: A realistic portrayal of a Martian emergency housing facility bustling with new Earth arrivals, under the shadow of a looming meteor impact."
+    },
+    {
+      "section": "econ",
+      "headline": "ISSP Moves to Stabilize Woolong Amid Building Confidence",
+      "byline": "� Woolong Wire / Econ",
+      "body": "The Inter-Solar System Police (ISSP) has unveiled new measures aimed at stabilizing the Woolong, bolstering confidence in the currency. According to ISSP Economic Analyst Jin Watanabe, \"These measures are necessary to ensure the Woolong's value remains steady as market forces fluctuate.\" The announcement has seen a positive reception from financial markets, which are increasingly viewing ISSP as a stabilizing presence in the economic landscape.",
+      "image_brief": "WANTED: An image of a bustling financial district with traders reacting to positive news about the Woolong's stability, capturing the mood of cautious optimism."
+    },
+    {
+      "section": "gate",
+      "headline": "Ganymede Gate Sabotage Linked to Wider Syndicate Conspiracy",
+      "byline": "� Woolong Wire / Gate",
+      "body": "An analysis has revealed that the recent sabotage at the Ganymede Gate is part of a larger syndicate-linked conspiracy. ISSP investigators suggest the sabotage was intended to disrupt trade and cause chaos in the sector. \"We have increased patrols and are focusing resources on dismantling these illicit networks,\" ISSP Chief Inspector Riko Tanaka stated. The discovery has led to heightened vigilance and increased bounty board activity.",
+      "image_brief": "SEEKING: A tense, atmospheric image of ISSP officers investigating the damaged sections of the Ganymede Gate, with syndicate graffiti visible."
+    },
+    {
+      "section": "citizen",
+      "headline": "Leo Feng: Belt Miner Uncovers Rare Finds Amidst Turmoil",
+      "byline": "� Woolong Wire / Citizen",
+      "body": "Amongst the chaos of syndicate recruitment efforts, Belt salvager Leo Feng has made headlines with the discovery of rare mineral deposits in the Asteroid Belt. \"It's a risky job, but the rewards can be worth it,\" Feng shared. The Belt's economy remains complex, with salvagers like Feng navigating both opportunities and dangers. His story highlights the resilience and resourcefulness required to thrive in this challenging profession.",
+      "image_brief": "REQUEST: A dynamic portrait of Leo Feng at work in the Belt, surrounded by the harsh beauty of asteroids and his mining equipment."
+    },
+    {
+      "section": "biz",
+      "headline": "Red Horizon Robotics: Pioneering Mars' Autonomous Future",
+      "byline": "� Woolong Wire / Biz",
+      "body": "Mars-based startup Red Horizon Robotics is breaking new ground in autonomous rover systems, drawing significant attention and investment. \"Our technology could revolutionize planetary exploration and mining,\" CEO Kara Lin declared. The company's innovations are fueling competition in Mars' tech sector and sparking interest from Venusian trade partners. With these advancements, Red Horizon Robotics is positioning itself as a leader in interplanetary technology.",
+      "image_brief": "NEEDED: An image of Red Horizon Robotics' autonomous rovers being tested in a Martian landscape, showcasing their cutting-edge design and technology."
+    }
+  ],
+  "bounties": [
+    {
+      "name": "Marina Lu",
+      "line": "Rising star Marina Lu apprehends notorious thief on Ganymede, earning accolades.",
+      "reward": 50000,
+      "status": "open"
+    }
+  ],
+  "oldmen_column": {
+    "headline": "Remembering What We Forgot",
+    "body": "Now, did you hear about this new rover business on Mars? Reminds me of when we used to build things with our own hands. Now they got these robots doing everything. But don't you worry, I'm sure in a few years they�ll be fixing their own mistakes too. Remember when the gates were new? Half the time they didn't work, and the other half you were already late. Now, the news is all about cowboys catching thieves! Can you imagine? It's like we're living in those old stories we used to tell. Well, that's progress for you. At least Earth's meteors keep things interesting, keeps people moving, if you ask me."
+  },
+  "woolong_per": {
+    "USD": 0.75,
+    "EUR": 0.68,
+    "JPY": 105,
+    "GBP": 0.55
+  },
+  "stocks": [
+    {
+      "ticker": "GINA",
+      "price": 152,
+      "trend": "down"
+    },
+    {
+      "ticker": "HEXA",
+      "price": 98,
+      "trend": "up"
+    },
+    {
+      "ticker": "PIPP",
+      "price": 120,
+      "trend": "up"
+    }
+  ],
+  "mpu_forecast": [
+    {
+      "sector": "Ganymede",
+      "lat": 50.1,
+      "lon": 125.9,
+      "eta_minutes": 30,
+      "severity": "moderate"
+    }
+  ]
+}

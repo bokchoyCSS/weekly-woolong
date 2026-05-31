@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE WEEKLY WOOLONG // Vol.1 No.1 // Inaugural Launch Edition</title>
+<style>
+  :root{
+    --bg:#000;--green:#33ff77;--green-dim:#1f8f48;--green-faint:#0c3d1f;
+    --yellow:#ffd400;--pink:#ff2d9b;--blue:#3a5cff;--teal:#1fd0c0;--red:#ff3b30;
+    --orange:#ff8c2b;--purple:#b06bff;--food:#d9b38c;
+    --paper:#0a0a0a;--serif:'Times New Roman',Times,serif;--mono:'Courier New',Courier,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--green);font-family:var(--mono);font-size:15px;line-height:1.45;padding:14px;}
+  a{color:var(--green);text-decoration:underline;cursor:pointer;}
+  a:hover{color:var(--yellow);background:#111;}
+  .blink{animation:blink 1.1s steps(1) infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  @keyframes scroll{to{transform:translateX(-100%);}}
+
+  .sysbar{border:1px solid var(--green);padding:4px 8px;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;color:var(--green-dim);}
+  .sysbar b{color:var(--green);}
+
+  .masthead{border:1px solid var(--green);border-top:none;text-align:center;padding:16px 10px 10px;position:relative;}
+  .masthead h1{font-family:var(--serif);font-size:62px;letter-spacing:3px;font-weight:700;color:var(--green);line-height:0.95;cursor:pointer;}
+  .masthead .tag{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--green-dim);margin-top:4px;}
+  .masthead .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;margin-top:12px;border-top:1px solid var(--green-dim);padding-top:6px;color:var(--green-dim);}
+  .newburst{position:absolute;top:8px;right:10px;border:1px solid var(--pink);color:var(--pink);font-family:var(--serif);font-weight:700;font-size:13px;padding:3px 6px;transform:rotate(6deg);text-align:center;}
+  .counter{color:var(--yellow);}
+
+  .ticker{border:1px solid var(--green);border-top:none;overflow:hidden;white-space:nowrap;font-size:13px;padding:4px 0;color:var(--red);}
+  .ticker span{display:inline-block;padding-left:100%;animation:scroll 40s linear infinite;}
+  .ticker b{color:var(--yellow);}
+
+  nav{border:1px solid var(--green);border-top:none;display:flex;flex-wrap:wrap;}
+  nav a{flex:1 1 auto;text-align:center;text-decoration:none;padding:8px 6px;font-size:12px;font-weight:700;letter-spacing:1px;border-right:1px solid var(--green-dim);text-transform:uppercase;}
+  nav a:last-child{border-right:none;}
+  nav a.astro{color:var(--blue);} nav a.earth{color:var(--teal);} nav a.econ{color:var(--yellow);}
+  nav a.gate{color:var(--green);} nav a.bounty{color:var(--pink);} nav a.mpu{color:var(--red);} nav a.arch{color:var(--green-dim);}
+  nav a.citizen{color:var(--orange);} nav a.biz{color:var(--purple);}
+  nav a.food{color:var(--food);}
+  nav a:hover{color:#000;background:var(--yellow);}
+  nav a.on{background:#111;}
+
+  .wrap{display:flex;gap:12px;margin-top:12px;align-items:flex-start;}
+  .main{flex:1 1 auto;min-width:0;}
+  .rail{flex:0 0 248px;}
+  @media(max-width:780px){.wrap{flex-direction:column;}.rail{flex:1 1 auto;width:100%;}.masthead h1{font-size:38px;}}
+
+  .view{display:none;} .view.on{display:block;animation:fadein .15s;}
+  @keyframes fadein{from{opacity:0.4;}to{opacity:1;}}
+
+  .block{border:1px solid var(--green);margin-bottom:12px;}
+  .block>.hd{padding:5px 8px;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--green);display:flex;justify-content:space-between;}
+  .block .body{padding:9px 10px;}
+  .hl{font-family:var(--serif);font-size:23px;font-weight:700;line-height:1.1;margin-bottom:4px;}
+  .byline{font-size:11px;color:var(--green-dim);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;}
+  .block p{margin-bottom:8px;font-family:var(--serif);font-size:15px;}
+  .block.astro{border-color:var(--blue);} .block.astro .hd{color:var(--blue);border-color:var(--blue);}
+  .block.earth{border-color:var(--teal);} .block.earth .hd{color:var(--teal);border-color:var(--teal);}
+  .block.econ{border-color:var(--yellow);} .block.econ .hd{color:var(--yellow);border-color:var(--yellow);}
+  .block.gate .hd{color:var(--green);}
+  .block.bounty{border-color:var(--pink);} .block.bounty .hd{color:var(--pink);border-color:var(--pink);}
+  .block.mpu{border-color:var(--red);} .block.mpu .hd{color:var(--red);border-color:var(--red);}
+  .block.citizen{border-color:var(--orange);} .block.citizen .hd{color:var(--orange);border-color:var(--orange);}
+  .block.biz{border-color:var(--purple);} .block.biz .hd{color:var(--purple);border-color:var(--purple);}
+  .block.food{border-color:var(--food);} .block.food .hd{color:var(--food);border-color:var(--food);}
+
+  .teaser{border:1px solid var(--green-dim);padding:8px 10px;margin-bottom:10px;cursor:pointer;}
+  .teaser:hover{border-color:var(--yellow);}
+  .teaser .k{font-size:11px;letter-spacing:1px;text-transform:uppercase;}
+  .teaser .t{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.15;margin:2px 0;}
+  .teaser p{font-family:var(--serif);font-size:13px;color:var(--green-dim);}
+  .teaser.astro .k{color:var(--blue);} .teaser.earth .k{color:var(--teal);} .teaser.econ .k{color:var(--yellow);}
+  .teaser.gate .k{color:var(--green);} .teaser.bounty .k{color:var(--pink);} .teaser.mpu .k{color:var(--red);}
+  .teaser.citizen .k{color:var(--orange);} .teaser.biz .k{color:var(--purple);}
+  .teaser.food .k{color:var(--food);}
+
+  .still{border:1px solid var(--green-dim);margin:6px 0;}
+  .still .frame{height:150px;background:var(--paper);display:flex;align-items:center;justify-content:center;color:var(--green-dim);font-size:11px;text-align:center;border-bottom:1px solid var(--green-dim);position:relative;overflow:hidden;}
+  .still .frame .grid{position:absolute;inset:0;opacity:0.25;background-image:linear-gradient(var(--green-faint) 1px,transparent 1px),linear-gradient(90deg,var(--green-faint) 1px,transparent 1px);background-size:14px 14px;}
+  .still .cap{padding:3px 6px;font-size:11px;color:var(--green-dim);} .still .cap b{color:var(--green);}
+
+  .foodnote{border:1px dashed var(--food);padding:10px;margin-bottom:14px;font-family:var(--serif);font-size:14px;color:var(--food);}
+  .recipe{margin-bottom:16px;border-top:1px dashed var(--food);padding-top:12px;}
+  .recipe h4{font-family:var(--serif);font-size:21px;color:var(--food);margin-bottom:2px;}
+  .recipe .sub{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--green-dim);margin-bottom:8px;}
+  .recipe .cols{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;}
+  .recipe .ing{flex:1 1 180px;border:1px solid var(--food);padding:6px 8px;}
+  .recipe .ing .t{color:var(--food);font-size:12px;letter-spacing:1px;border-bottom:1px solid var(--food);padding-bottom:3px;margin-bottom:5px;}
+  .recipe .ing ul{list-style:none;font-size:13px;}
+  .recipe .ing li{padding:2px 0;border-bottom:1px dashed var(--green-faint);}
+  .recipe .ing li:last-child{border-bottom:none;}
+  .recipe ol{margin:8px 0 0 18px;font-family:var(--serif);font-size:14px;}
+  .recipe ol li{margin-bottom:5px;}
+  .recipe .lead{font-family:var(--serif);font-size:14px;margin:10px 0 2px;}
+  .recipe .lead b{color:var(--food);}
+  .foodimg{border:1px dashed var(--food);background:var(--paper);min-height:140px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--food);font-size:12px;padding:10px;margin:8px 0;letter-spacing:1px;}
+
+  .poster{border:1px solid var(--pink);margin-bottom:8px;}
+  .poster .ph{background:#160010;color:var(--pink);padding:3px 7px;font-weight:700;font-size:13px;display:flex;justify-content:space-between;}
+  .poster .pb{padding:6px 8px;font-size:13px;}
+  .poster .reward{color:var(--yellow);font-weight:700;} .poster .status{color:var(--green);} .poster .status.k{color:var(--red);}
+
+  .widget{border:1px solid var(--green);margin-bottom:12px;}
+  .widget .wh{padding:5px 7px;font-weight:700;font-size:12px;border-bottom:1px solid var(--green);letter-spacing:1px;text-transform:uppercase;display:flex;justify-content:space-between;}
+  .widget .wb{padding:8px;font-size:13px;}
+
+  .ad{border:2px solid var(--green);margin-bottom:12px;text-align:center;}
+  .ad .label{font-size:9px;color:var(--green-dim);border-bottom:1px solid var(--green-dim);padding:1px;letter-spacing:2px;}
+  .ad .brand{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--green);padding:10px 4px 2px;letter-spacing:4px;}
+  .ad .pitch{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--green-dim);padding:0 8px 10px;}
+
+  .conv label{display:block;font-size:11px;color:var(--green-dim);margin:4px 0 2px;text-transform:uppercase;}
+  .conv input,.conv select{width:100%;background:#000;color:var(--green);border:1px solid var(--green);font-family:var(--mono);font-size:14px;padding:5px;}
+  .conv .out{margin-top:9px;border-top:1px dashed var(--green-dim);padding-top:8px;font-size:12px;color:var(--green-dim);}
+  .conv .out .big{color:var(--yellow);font-size:21px;font-weight:700;display:block;word-break:break-all;margin-bottom:3px;}
+  .conv .pitch{font-family:var(--serif);font-style:italic;font-size:12px;color:var(--green-dim);margin-bottom:5px;}
+
+  .stk{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px dashed var(--green-faint);font-size:13px;}
+  .stk:last-child{border-bottom:none;}
+  .stk .nm{color:var(--green);} .stk .nm small{color:var(--green-dim);font-size:10px;display:block;}
+  .stk .pr{text-align:right;white-space:nowrap;}
+  .stk .pr .chg{font-size:11px;display:block;}
+  .up{color:var(--green);} .down{color:var(--red);}
+
+  .coffee{border:1px solid var(--yellow);text-align:center;margin-bottom:12px;}
+  .coffee a{display:block;text-decoration:none;color:var(--yellow);padding:9px 6px;font-size:13px;}
+  .coffee a:hover{background:var(--yellow);color:#000;}
+
+  .countdown{font-size:13px;color:var(--red);text-align:center;padding:6px;border:1px solid var(--red);border-bottom:none;}
+  .countdown b{color:var(--yellow);font-size:20px;}
+  .mapbox{border:1px solid var(--red);background:#070000;position:relative;}
+  .mapbox svg{display:block;width:100%;height:auto;}
+  .cont{fill:var(--green-faint);stroke:var(--green-dim);stroke-width:0.5;}
+  .gl{stroke:rgba(255,59,48,0.16);stroke-width:0.4;}
+  .eq{stroke:rgba(255,59,48,0.4);stroke-width:0.5;}
+  .blip{fill:var(--red);} .blip.b{animation:blink 1.3s steps(1) infinite;}
+  .blab{fill:var(--red);font-family:var(--mono);font-size:4px;}
+  .coords{font-size:10px;color:var(--red);white-space:nowrap;overflow:hidden;background:#000;border:1px solid var(--red);border-top:none;}
+  .coords span{display:inline-block;padding-left:100%;animation:scroll 24s linear infinite;}
+  .mpuvoice{font-family:var(--serif);font-style:italic;color:var(--green-dim);font-size:14px;padding:8px 4px;border:1px solid var(--red);border-top:none;}
+  .ftable{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+  .ftable th,.ftable td{border:1px solid var(--red);padding:4px 6px;text-align:left;}
+  .ftable th{color:var(--red);}
+
+  .arcnote{border:1px solid var(--green);padding:10px;margin-bottom:12px;font-family:var(--serif);font-size:14px;color:var(--green-dim);}
+  .arcnote b{color:var(--green);}
+  .issue{border:1px solid var(--green);margin-bottom:10px;}
+  .issue .ih{display:flex;justify-content:space-between;padding:5px 8px;border-bottom:1px solid var(--green);font-size:12px;font-weight:700;}
+  .issue .ib{padding:8px 10px;font-size:13px;}
+  .issue .exp{color:var(--yellow);} .issue.empty{border-style:dashed;border-color:var(--green-dim);color:var(--green-dim);}
+  .issue.empty .ib{font-family:var(--serif);font-style:italic;}
+
+  footer{border:1px solid var(--green);margin-top:12px;padding:10px;font-size:11px;color:var(--green-dim);text-align:center;line-height:1.7;}
+  footer a{color:var(--green-dim);}
+  .construction{color:var(--yellow);border:1px solid var(--yellow);display:inline-block;padding:2px 8px;margin:6px 0;}
+</style>
+</head>
+<body>
+
+  <div class="sysbar">
+    <div>D-135 RELAY <b>● ONLINE</b> // YOUR WEEKLY INTERSPACE PAPER // </div>
+    <div id="clock">SYNCING…<span class="blink">_</span></div>
+  </div>
+
+  <header class="masthead">
+    <div class="newburst">NEW!<br>VOL.1</div>
+    <h1 onclick="go('home')">The Weekly Woolong</h1>
+    <div class="tag">"The n1 paper around the solar system"</div>
+    <div class="meta">
+      <span>VOL. 1 · NO. 1 · INAUGURAL LAUNCH EDITION</span>
+      <span id="updated">LAST UPDATED: —</span>
+    </div>
+  </header>
+
+  <div class="ticker"><span><b>BREAKING:</b> WOOLONG CLEARS FIRST SETTLEMENT WEEK · MARS RELAY SATELLITE LIVE, EARTH BACK ON AIR · <b>MPU:</b> 4 IMPACTS FORECAST THIS CYCLE — CHECK YOUR SECTOR · ISSP OPENS COWBOY REGISTRATION · GINA MOTORS SHIPS FIRST MARS-BUILT MONO-WHEEL · OKONKWO, 19, TAKES THE HEXACHESS OPEN · PIPPU COLA DOWN · GANYMEDE GATE AT HALF CAPACITY · &nbsp;&nbsp;</span></div>
+
+  <nav>
+    <a class="astro" data-go="astro" onclick="go('astro')">Astro-Politics</a>
+    <a class="earth" data-go="earth" onclick="go('earth')">Earth Politics</a>
+    <a class="econ" data-go="econ" onclick="go('econ')">Economy</a>
+    <a class="biz" data-go="biz" onclick="go('biz')">Business</a>
+    <a class="gate" data-go="gate" onclick="go('gate')">GATE Protocol</a>
+    <a class="bounty" data-go="bounty" onclick="go('bounty')">Bounty</a>
+    <a class="citizen" data-go="citizen" onclick="go('citizen')">Citizen Story</a>
+    <a class="mpu" data-go="mpu" onclick="go('mpu')">MPU</a>
+    <a class="food" data-go="food" onclick="go('food')">Cookbook</a>
+    <a class="arch" data-go="arch" onclick="go('arch')">Archive</a>
+  </nav>
+
+  <div class="wrap">
+    <main class="main">
+
+      <!-- HOME -->
+      <section class="view on" data-v="home">
+        <div class="teaser astro" data-tease="astro" onclick="go('astro')"><div class="k">Astro-Politics</div><div class="t">Mars Ratifies the Tharsis Accord; Ganymede Walks Out Before the Ink Dries</div><p>Three delegations signed. The Jovian moons did not. ▸</p></div>
+        <div class="teaser biz" data-tease="biz" onclick="go('biz')"><div class="k">Business Innovation</div><div class="t">Gina Motors Ships the First Mars-Built Mono-Wheel; Pippu Cola Buys the Side Panel</div><p>The frontier gets its first homegrown factory. ▸</p></div>
+        <div class="teaser citizen" data-tease="citizen" onclick="go('citizen')"><div class="k">Citizen Story</div><div class="t">Mara Okonkwo, 19, Won the HexaChess Open With an Engine She Wrote in a Maintenance Bay</div><p>She works nights on the relay. She taught herself. ▸</p></div>
+        <div class="teaser econ" data-tease="econ" onclick="go('econ')"><div class="k">Economy</div><div class="t">The Woolong Holds. Nobody Exhales.</div><p>One week in and the new currency hasn't collapsed yet. ▸</p></div>
+        <div class="teaser bounty" data-tease="bounty" onclick="go('bounty')"><div class="k">★ (NEW!) Bounty Program</div><div class="t">First 40 Cowboy Badges Issued; Board Already Crowded</div><p>Catch them alive, get paid. New listings posted. ▸</p></div>
+        <div class="teaser mpu" data-tease="mpu" onclick="go('mpu')"><div class="k">MPU — Live Forecast</div><div class="t">Four Impacts This Cycle. It Knows Where. It Always Does.</div><p>Real-time map and countdown. ▸</p></div>
+        <div class="teaser earth" data-tease="earth" onclick="go('earth')"><div class="k">Earth Politics</div><div class="t">What's Left of Geneva Votes to Keep the Lights On Another Quarter</div><p>The motion passed. There was no one to vote against it. ▸</p></div>
+        <div class="teaser gate" data-tease="gate" onclick="go('gate')"><div class="k">GATE Protocol</div><div class="t">Ganymede Gate Reopens at Reduced Capacity</div><p>"Watch the scans," ISSP advises. ▸</p></div>
+        <div class="teaser food" onclick="go('food')"><div class="k">The Foodbook</div><div class="t">Bell Peppers and Beef — the Official Special (Beef Optional, As Ever)</div><p>The one page the satellite doesn't touch. ▸</p></div>
+      </section>
+
+      <!-- ASTRO -->
+      <section class="view" data-v="astro">
+        <div class="block astro"><div class="hd"><span>Astro-Politics</span><span>SECTOR: SOL</span></div><div class="body" id="sec-astro">
+          <div class="hl">Mars Ratifies the Tharsis Accord; Ganymede Walks Out Before the Ink Dries</div>
+          <div class="byline">— Woolong Wire / Inner-System Desk</div>
+          <p>Four delegations sat down on Mars this week to carve up gate routes nobody owned a decade ago. Three signed. The Jovian moons did not. A Ganymede attaché was heard to remark, on his way to the airlock, that you cannot divide a road that still kills the people who use it.</p>
+          <p>Mars is acting like the center of something. It can afford to. It has the lights, the relay, and most of the survivors who still have money. The rest of the system is invited to catch up, or to keep paying tolls.</p>
+          <div class="still"><div class="frame"><div class="grid"></div>INCOMING TRANSMISSION // STILL PENDING</div><div class="cap"><b>FIG.1</b> — Accord signing, Olympus Hall. <i>[full-color still drops here weekly]</i></div></div>
+        </div></div>
+      </section>
+
+      <!-- EARTH -->
+      <section class="view" data-v="earth">
+        <div class="block earth"><div class="hd"><span>Earth Politics</span><span>SECTOR: HOME</span></div><div class="body" id="sec-earth">
+          <div class="hl">What's Left of Geneva Votes to Keep the Lights On Another Quarter</div>
+          <div class="byline">— Woolong Wire / Earth Desk</div>
+          <p>The provisional council met under a roof that has been patched four times. The motion passed. There was no one to vote against it, which the chair noted, and then moved on.</p>
+          <p>One point five billion of us are still down here, under a sky that has not stopped falling in four years. The colonies call us a backwater. We call it home, mostly because the word for what it actually is has not been invented yet.</p>
+        </div></div>
+      </section>
+
+      <!-- ECON -->
+      <section class="view" data-v="econ">
+        <div class="block econ"><div class="hd"><span>Economy</span><span>WOOLONG ₩</span></div><div class="body" id="sec-econ">
+          <div class="hl">The Woolong Holds. Nobody Exhales.</div>
+          <div class="byline">— Woolong Wire / Markets</div>
+          <p>One week into circulation and the system's new currency has not collapsed, which in 2026 passes for a triumph. It settled near 100 to the old American dollar — roughly a cent apiece — and twitched there all week, because the thing is brand new and nobody's sure what it's worth from one hour to the next.</p>
+          <p>The syndicates noticed. They always notice. Use the converter while the number means something. By next week it may not.</p>
+        </div></div>
+      </section>
+
+      <!-- BUSINESS INNOVATION -->
+      <section class="view" data-v="biz">
+        <div class="block biz"><div class="hd"><span>Business Innovation</span><span>SECTOR: MARKETS</span></div><div class="body" id="sec-biz">
+          <div class="hl">Gina Motors Ships the First Mars-Built Mono-Wheel; Pippu Cola Buys the Side Panel</div>
+          <div class="byline">— Woolong Wire / Business Desk</div>
+          <p>Until this week, every vehicle on Mars arrived in a crate from somewhere else. On Tuesday a Tharsis assembly line — three years of borrowed tooling and stubbornness — rolled out its first homegrown mono-wheel, and Gina Motors became the first thing the frontier has built for itself instead of imported. It is ugly. It runs. Out here that is the whole review.</p>
+          <p>Pippu Cola bought the side panel before the paint dried. The drink is in every dome, every gate lounge, every relief crate; its founders understood early that on a planet with nothing, the company that sells you the small comfort wins. HexaChess, the puzzle outfit whose game has quietly eaten everyone's idle hours, says it'll license the dashboard next.</p>
+          <p>None of these names existed five years ago. That's the story of the section: in a system rebuilding from zero, the businesses being born now are the ones your grandchildren will think were always here.</p>
+          <div class="still"><div class="frame"><div class="grid"></div>INCOMING TRANSMISSION // STILL PENDING</div><div class="cap"><b>FIG.2</b> — First unit off the Tharsis line. <i>[full-color still drops here weekly]</i></div></div>
+        </div></div>
+      </section>
+
+      <!-- GATE -->
+      <section class="view" data-v="gate">
+        <div class="block gate"><div class="hd"><span>GATE News Protocol</span><span>TRANSIT</span></div><div class="body" id="sec-gate">
+          <div class="hl">Ganymede Gate Reopens at Reduced Capacity; ISSP Advises Travelers to "Watch the Scans"</div>
+          <div class="byline">— Woolong Wire / Transit Desk · sponsored content adjacent</div>
+          <p>The Ganymede gate is open again at half flow. Officials call it stable. Officials called the first one stable too, in 2022, and we are still sweeping up the moon.</p>
+          <p>Travelers are reminded that the bank scans at the gate are, for the third quarter running, "under review" following unexplained withdrawals from transit accounts. Carry cash. Carry less of it.</p>
+        </div></div>
+      </section>
+
+      <!-- BOUNTY -->
+      <section class="view" data-v="bounty">
+        <div class="block bounty"><div class="hd"><span>★ (NEW!) Bounty Hunter Program</span><span>ISSP CONTRACT BOARD</span></div><div class="body" id="sec-bounty">
+          <div class="byline">— ISSP Public Notice · catch them alive, get paid · cowboys welcome</div>
+          <div class="poster"><div class="ph"><span>RUFUS "THE LIGHTHOUSE" OBARA</span><span class="status">ALIVE</span></div><div class="pb">Hit four GATE tollbooths on the Tharsis line in a single night. Likes high ground and a clean getaway.<br><span class="reward">REWARD: ₩ 8,000,000</span></div></div>
+          <div class="poster"><div class="ph"><span>SISTER ANNALISE VOSS</span><span class="status">ALIVE</span></div><div class="pb">Ran a relief convoy that relieved itself of the relief. Wanted on six moons for fraud.<br><span class="reward">REWARD: ₩ 4,500,000</span></div></div>
+          <div class="poster"><div class="ph"><span>THE QUIET BROTHERS</span><span class="status k">ALIVE (PREFERRED)</span></div><div class="pb">Hijacked a water freighter out of Europa. Two of them. Nobody's sure which two.<br><span class="reward">REWARD: ₩ 11,000,000</span></div></div>
+        </div></div>
+      </section>
+
+      <!-- CITIZEN STORY -->
+      <section class="view" data-v="citizen">
+        <div class="block citizen"><div class="hd"><span>Citizen Story</span><span>THE SYSTEM IS MADE OF PEOPLE</span></div><div class="body" id="sec-citizen">
+          <div class="hl">Mara Okonkwo, 19, Won the HexaChess Open With an Engine She Wrote in a Relay Maintenance Bay</div>
+          <div class="byline">— Woolong Wire / Citizens Desk</div>
+          <p>She works the night shift keeping the Mars relay's coolant lines from freezing — the same relay that lets you read this. Between rounds, on a terminal older than she is, Mara Okonkwo taught herself to write a HexaChess engine. This week it beat forty veterans and a syndicate-backed favorite to take the inaugural Open. Asked for her strategy she said she didn't have one, she just had a lot of quiet nights.</p>
+          <p>Elsewhere: <b>Tomas Reyes</b> walked forty kilometers of newly drained Ganymede shelf and came back with a hand-drawn map nobody asked for, which the floating cities are now using to plan their next ring. And <b>Antonio, Carlos and Jobim</b> — yes, them again — entered the Alba City domino league as a team, lost in the first round, and left insisting they had personally built the table. The table, for the record, predates all three. Probably.</p>
+          <div class="still"><div class="frame"><div class="grid"></div>INCOMING TRANSMISSION // STILL PENDING</div><div class="cap"><b>FIG.3</b> — Okonkwo at the relay terminal. <i>[full-color still drops here weekly]</i></div></div>
+        </div></div>
+      </section>
+
+      <!-- MPU -->
+      <section class="view" data-v="mpu">
+        <div class="block mpu"><div class="hd"><span>MPU — Impact Forecast &amp; Earth Mapping</span><span class="blink">● LIVE</span></div><div class="body" style="padding:8px;">
+          <div class="countdown">NEXT IMPACT IN <b id="cd">--:--:--</b> · SECTOR <span id="sector">—</span></div>
+          <div class="mapbox">
+            <svg viewBox="0 0 360 180" preserveAspectRatio="xMidYMid meet">
+              <g class="glg"></g>
+              <line class="eq" x1="0" y1="90" x2="360" y2="90"></line>
+              <path class="cont" d="M30,28 L70,18 L118,26 L126,44 L110,50 L104,64 L86,80 L74,64 L62,58 L48,50 L36,40 Z"></path>
+              <path class="cont" d="M130,12 L156,10 L158,26 L138,30 Z"></path>
+              <path class="cont" d="M100,106 L120,100 L130,110 L132,128 L120,150 L108,142 L102,122 Z"></path>
+              <path class="cont" d="M168,30 L202,24 L214,34 L204,48 L184,50 L172,42 Z"></path>
+              <path class="cont" d="M176,56 L214,54 L226,76 L218,110 L198,130 L188,108 L180,82 Z"></path>
+              <path class="cont" d="M214,28 L262,16 L322,20 L354,38 L346,58 L300,68 L272,62 L250,72 L234,54 L220,42 Z"></path>
+              <path class="cont" d="M300,108 L334,104 L340,122 L320,132 L302,124 Z"></path>
+              <g class="dots"></g>
+            </svg>
+          </div>
+          <div class="coords"><span id="coordfeed">ACQUIRING COORDINATES…</span></div>
+          <div class="mpuvoice" id="mpuline">Glad to be of service — MPU</div>
+          <table class="ftable"><thead><tr><th>SECTOR</th><th>LAT</th><th>LON</th><th>ETA</th></tr></thead><tbody id="ftbody"></tbody></table>
+          <p style="font-size:11px;color:var(--green-dim);margin-top:8px;font-family:var(--mono);">Map is a built-in SVG so impacts plot on real coordinates with no external asset. Swap in any licensed map raster on deploy if you want photographic terrain.</p>
+        </div></div>
+      </section>
+
+      <!-- COOKBOOK / FOODBOOK (static — not AI-updated) -->
+      <section class="view" data-v="food">
+        <div class="block food"><div class="hd"><span>The Foodbook</span><span>KEPT BY HAND · NOT BY MPU</span></div><div class="body">
+          <div class="foodnote">The one page the satellite doesn't touch. No forecasts, no bounties, no markets — just the recipes that keep a crew alive between jobs. Updated by a person, when a person feels like it.</div>
+
+          <div class="recipe" style="border-top:none;padding-top:0;">
+            <h4>Bell Peppers and Beef — the Official Special</h4>
+            <div class="sub">Serves a hungry crew of three or four. The beef is aspirational. It usually is.</div>
+            <!-- ADD YOUR PHOTO: replace the div below with  <img src="beef.jpg" style="width:100%;display:block"> -->
+            <div class="foodimg">[ DROP YOUR PHOTO HERE — bell-peppers-and-beef.jpg ]</div>
+            <div class="cols">
+              <div class="ing"><div class="t">YOU'LL NEED</div><ul>
+                <li>4 green bell peppers, sliced thin</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 thumb ginger, minced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 tsp sugar · a pinch of pepper</li>
+                <li>oil for the wok</li>
+                <li>beef, thin-sliced — <i>if you caught a bounty this week</i></li>
+              </ul></div>
+              <div class="ing"><div class="t">IF NO BEEF (THE USUAL CASE)</div><ul>
+                <li>more bell peppers</li>
+                <li>a tin of whatever's in the locker</li>
+                <li>your dignity (optional)</li>
+                <li>the line "it's a lighter take"</li>
+              </ul></div>
+            </div>
+            <ol>
+              <li>Get the wok smoking hot. This dish forgives nothing and rewards heat.</li>
+              <li>If you have beef, sear it fast and set it aside. Try not to mention what it cost.</li>
+              <li>Garlic and ginger into the hot oil — ten seconds, no more.</li>
+              <li>Peppers in. Toss hard and keep them bright; limp peppers are a confession of defeat.</li>
+              <li>Soy, oyster sauce, sugar, pepper. Return the beef, if it ever existed.</li>
+              <li>Plate it like you meant it to be all peppers. Out here, conviction is half the meal.</li>
+            </ol>
+          </div>
+
+          <div class="recipe">
+            <h4>Mini Guide — Growing Shiitake &amp; Tomatoes in Space</h4>
+            <div class="sub">For the ship cabin, the dome corner, or the maintenance bay nobody checks.</div>
+
+            <p class="lead"><b>Shiitake.</b> They don't want light, which makes them the easiest thing to grow in a place that hasn't any to spare.</p>
+            <!-- ADD YOUR PHOTO: replace the div below with  <img src="shiitake.jpg" style="width:100%;display:block"> -->
+            <div class="foodimg">[ DROP YOUR PHOTO HERE — shiitake.jpg ]</div>
+            <ol>
+              <li>Start with a hardwood block or sawdust brick already inoculated with shiitake spawn. Soak it 24 hours in clean water.</li>
+              <li>Keep it cool and humid — a sealed crate with a damp cloth holds the air. Low light is fine; darkness is fine.</li>
+              <li>In one to two weeks, pins appear. Mist daily. Don't drown them.</li>
+              <li>Harvest by twisting, not cutting. Rest the block two weeks back in water and it fruits again. A good block feeds a crew for months.</li>
+            </ol>
+
+            <p class="lead"><b>Tomatoes.</b> The opposite problem: greedy for light, and worth every watt.</p>
+            <!-- ADD YOUR PHOTO: replace the div below with  <img src="tomatoes.jpg" style="width:100%;display:block"> -->
+            <div class="foodimg">[ DROP YOUR PHOTO HERE — tomatoes.jpg ]</div>
+            <ol>
+              <li>Pick a dwarf or "micro" variety — they fruit in small spaces and don't fight the ceiling.</li>
+              <li>Grow in a bucket of inert medium fed with nutrient water (hydroponic is cleanest where soil is precious). Roots still need oxygen, so never leave them waterlogged.</li>
+              <li>Give them the brightest light you've got, 14–16 hours a day. A cheap grow lamp beats a porthole.</li>
+              <li>In zero-g there are no bees, so airflow does the pollinating — run a small fan, or flick each flower daily. No buzz, no fruit.</li>
+              <li>Six to ten weeks to red. The first ripe one is traditionally eaten standing over the sink, alone, saying nothing.</li>
+            </ol>
+          </div>
+
+        </div></div>
+      </section>
+
+      <!-- ABOUT: AGENTIC ENGINEERING & THE ENVIRONMENT -->
+      <section class="view" data-v="about">
+        <div class="block"><div class="hd"><span>About — Agentic Engineering &amp; the Environment</span><span>A NOTE FROM THE EDITORS</span></div><div class="body">
+          <div class="hl">How This Paper Is Made, and What It Costs the Real Sky</div>
+          <p style="font-family:var(--serif);font-size:15px;">The Weekly Woolong is a work of collaboration between human editors and AI. The world, the voice, and the rules are written by people; the weekly news, the images, and the running storylines are generated by AI agents working inside those rules. We do this for one reason: AI is the only way we found to keep an entire fictional solar system alive, in-character, every single week, without the vibe ever slipping. The atmosphere <i>is</i> the point, and this is how we hold it.</p>
+          <p style="font-family:var(--serif);font-size:15px;">We won't pretend this is uncontroversial. For a lot of people — artists especially — AI is a genuinely fraught subject, and we don't think that concern is silly. So we'll be plain about it: we use AI here exclusively as an atmospheric instrument for a fan-made, non-commercial work of fiction, not as a replacement for the human artists we're actively paying through our Artistic Bounties. If you make things, we'd rather hire you. The email is on the front page.</p>
+
+          <div class="hl" style="margin-top:14px;">The Water Question</div>
+          <p style="font-family:var(--serif);font-size:15px;">The honest environmental cost of AI is mostly water and power — data centers drink a surprising amount of both. A paper obsessed with a half-dead Earth would be hypocritical to ignore that, so here's exactly what we do about it:</p>
+          <ul style="font-family:var(--serif);font-size:15px;list-style:none;margin:6px 0;">
+            <li style="padding:4px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ We choose water-conscious AI providers.</b> Where there's a choice, we opt for companies with water-conservation commitments and efficient cooling.</li>
+            <li style="padding:4px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ We host as lean as possible.</b> The site is a static page on efficient infrastructure — there's no heavy server running around the clock to serve it.</li>
+            <li style="padding:4px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ We generate once a week, not constantly.</b> One batch of writing and images per issue. No always-on inference.</li>
+            <li style="padding:4px 0;"><b style="color:var(--green);">▸ We cap it on purpose.</b> We keep the weekly reader cap under 500, which keeps the whole footprint small by design.</li>
+          </ul>
+          <p style="font-family:var(--serif);font-size:15px;">Our target, all in: <b style="color:var(--yellow);">under 5 liters of water a year</b> for the entire project. Roughly a couple of bottles. We'll keep that number honest, and if it ever creeps, we'll say so here.</p>
+          <p style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--green-dim);">— The editors. Earth-produced, Mars-relayed, water budget watched.</p>
+        </div></div>
+      </section>
+
+      <!-- ARCHIVE -->
+      <section class="view" data-v="arch">
+        <div class="arcnote"><b>BANDWIDTH KEPT ARCHIVE.</b> The net barely survived the Gate, so we keep only <b>three weeks</b>. When a fourth issue publishes, the oldest is purged — gone on both ends. Bandwidth is spared up here and down there. Read them while they're here.</div>
+        <div class="issue"><div class="ih"><span>VOL.1 · NO.1 · INAUGURAL EDITION</span><span class="exp" id="exp1">EXPIRES IN —</span></div><div class="ib">Mars ratifies Tharsis Accord · Gina Motors ships first mono-wheel · Okonkwo takes the HexaChess Open · The Woolong holds · First cowboy badges issued · Four impacts forecast · <a onclick="go('home')">read issue ▸</a></div></div>
+        <div class="issue empty"><div class="ih"><span>VOL.1 · NO.2</span><span>SLOT OPEN</span></div><div class="ib">Awaiting next broadcast. MPU files weekly.</div></div>
+        <div class="issue empty"><div class="ih"><span>VOL.1 · NO.3</span><span>SLOT OPEN</span></div><div class="ib">Awaiting next broadcast.</div></div>
+      </section>
+
+    </main>
+
+    <!-- RAIL -->
+    <aside class="rail">
+      <div class="ad"><div class="label">SPONSORED · GATE</div><div class="brand">GATE</div><div class="pitch">"The least toll per kilometer in the universe."</div></div>
+
+      <div class="widget conv"><div class="wh"><span>Woolong Converter</span><span style="color:var(--green);" class="blink">STABLE ●</span></div><div class="wb">
+        <div class="pitch">Trade your currency now as the solar system's expanding!</div>
+        <label for="amt">Amount</label><input type="number" id="amt" value="100" min="0" oninput="convert()">
+        <label for="cur">From</label>
+        <select id="cur" onchange="convert()">
+          <option value="USD">USD — US Dollar</option><option value="EUR">EUR — Euro</option>
+          <option value="JPY">JPY — Yen</option><option value="GBP">GBP — Pound</option>
+        </select>
+        <div class="out"><span class="big" id="result">₩ —</span><span id="ratenote">live rate: —</span></div>
+      </div></div>
+
+      <div class="widget"><div class="wh"><span>Solar Exchange</span><span style="color:var(--green-dim);">₩ / LIVE</span></div><div class="wb" id="stocks"></div></div>
+
+      <div class="coffee"><a onclick="return tip()">⊕ Stand the editors<br>a cup of coffee — ₩200</a></div>
+
+      <div class="widget" style="border-color:var(--pink);"><div class="wh" style="color:var(--pink);border-color:var(--pink);"><span>★ Artistic Bounties</span><span class="blink">OPEN</span></div><div class="wb" style="font-size:12px;color:var(--green-dim);line-height:1.7;">
+        <span style="color:var(--pink);font-weight:700;">WANTED: artists &amp; photographers.</span><br>
+        The Weekly Woolong is hiring artists! Send us your work and we'll run it across the paper.<br><br>
+        <span style="color:var(--yellow);font-weight:700;">PAY:</span><br>
+        • $0.50 per good picture<br>
+        • Up to $15/month for good royalty-free pictures<br>
+        • +$1 bonus per OC (non-AI original content)<br>
+        • Weekly license to use your art for this project<br><br>
+        Submit your work to:<br>
+        <a href="mailto:weeklywoolonginquiries@proton.me" style="word-break:break-all;">weeklywoolonginquiries@proton.me</a><br><br>
+      </div></div>
+    </aside>
+  </div>
+
+  <footer>
+    <span class="construction">⚠ THIS PAGE IS UNDER (AGENTIC) CONSTRUCTION · READ MORE ON OUR USE OF AI-AGENTS ⚠</span><br>
+    Best viewed at 800×600 or whatever works !<br>
+    © 2026 THE WEEKLY WOOLONG · A work of Technological advancements by x · kept updated by the MPU network and agentic engineers <br>
+    <a onclick="return false">guestbook</a> · <a onclick="return false">webring</a> · <a onclick="return false">email the editors</a> · <a onclick="go('mpu')">about MPU</a> · <a onclick="go('about')">AI &amp; the environment</a><br>
+    <span style="color:var(--green);">Enjoy your visit, fellow bandwith user</span>
+  </footer>
+
+<script>
+  function pad(n){return String(n).padStart(2,'0');}
+
+  // PAGE ROUTER (real .html files on deploy; JS views here so it previews in one click)
+  function go(v){
+    document.querySelectorAll('.view').forEach(function(s){s.classList.toggle('on',s.dataset.v===v);});
+    document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.dataset.go===v);});
+    window.scrollTo(0,0);
+  }
+
+  // CLOCK (real date = in-world 2026)
+  var DAYS=['SUN','MON','TUE','WED','THU','FRI','SAT'],MO=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  function clock(){var d=new Date();
+    document.getElementById('clock').innerHTML=DAYS[d.getDay()]+' '+pad(d.getDate())+' '+MO[d.getMonth()]+' '+d.getFullYear()+' · '+pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds())+' SST <span class="blink">_</span>';
+    document.getElementById('updated').textContent='LAST UPDATED: '+MO[d.getMonth()]+' '+pad(d.getDate())+' '+d.getFullYear();}
+  setInterval(clock,1000);clock();
+
+  // WOOLONG CONVERTER — canon baseline (100₩ ~ 1 USD, so ₩1 ~ 1c USD), stable within 0.4%
+  window.BASE={USD:100,EUR:108,JPY:0.65,GBP:127};var mult=1;
+  function fmt(n){return Math.round(n).toLocaleString('en-US');}
+  window.convert=function convert(){
+    var amt=parseFloat(document.getElementById('amt').value)||0;
+    var c=document.getElementById('cur').value;
+    var rate=BASE[c]*mult;
+    document.getElementById('result').textContent='₩ '+fmt(amt*rate);
+    document.getElementById('ratenote').textContent='live rate: 1 '+c+' = ₩'+rate.toFixed(2);
+  }
+  setInterval(function(){mult=1+(Math.random()-0.5)*0.008;convert();},30000);convert();
+
+  function tip(){alert("The editors thank you. The coffee is terrible. It is, however, real coffee, which on Earth in 2026 is no small thing.\n\n[ wire this to a real Ko-fi / Buy-Me-a-Coffee link on deploy ]");return false;}
+
+  // STOCKS — Gina Motors / HexaChess / Pippu Cola (priced in woolongs, rapid-fire)
+  window.STK=[
+    {nm:'Gina Motors',tk:'GINA',p:4120,pp:4120},
+    {nm:'HexaChess',tk:'HEXA',p:980,pp:980},
+    {nm:'Pippu Cola',tk:'PIPP',p:6650,pp:6650}
+  ];
+  window.drawStocks=function drawStocks(){
+    document.getElementById('stocks').innerHTML=STK.map(function(s){
+      var d=s.p-s.pp,up=d>=0,pct=(d/s.pp*100).toFixed(2);
+      return '<div class="stk"><div class="nm">'+s.tk+'<small>'+s.nm+'</small></div><div class="pr"><span>₩'+fmt(s.p)+'</span><span class="chg '+(up?'up':'down')+'">'+(up?'▲':'▼')+' '+Math.abs(pct)+'%</span></div></div>';
+    }).join('');
+  }
+  function moveStocks(){STK.forEach(function(s){s.pp=s.p;s.p=Math.max(10,s.p*(1+(Math.random()-0.48)*0.08));});drawStocks();}
+  drawStocks();setInterval(moveStocks,2500);
+
+  // MPU IMPACT FORECAST — plotted on real lat/lon (x=lon+180, y=90-lat)
+  window.IMP=[
+    {sector:'NORTH AMERICAN SHELF',lat:41.9,lon:-87.6,mins:0.6},
+    {sector:'SAHARA BASIN',lat:23.4,lon:12.1,mins:3.1},
+    {sector:'CORAL SEA',lat:-15.0,lon:150.0,mins:6.4},
+    {sector:'SIBERIAN PLATE',lat:66.0,lon:94.0,mins:9.8}
+  ];
+  function ll(o){return {x:o.lon+180,y:90-o.lat};}
+  (function(){var g=document.querySelector('.glg'),s='';
+    for(var x=30;x<360;x+=30)s+='<line class="gl" x1="'+x+'" y1="0" x2="'+x+'" y2="180"></line>';
+    for(var y=30;y<180;y+=30)s+='<line class="gl" x1="0" y1="'+y+'" x2="360" y2="'+y+'"></line>';
+    g.innerHTML=s;})();
+  (function(){var g=document.querySelector('.dots'),s='';
+    IMP.forEach(function(im,i){var p=ll(im);s+='<circle class="blip b" cx="'+p.x+'" cy="'+p.y+'" r="2.6" style="animation-delay:'+(i*0.3)+'s"></circle><text class="blab" x="'+(p.x+4)+'" y="'+(p.y+2)+'">'+im.sector.split(' ')[0]+'</text>';});
+    g.innerHTML=s;})();
+  (function(){var b=document.getElementById('ftbody'),cf='';
+    b.innerHTML=IMP.map(function(im){var ns=im.lat>=0?'N':'S',ew=im.lon>=0?'E':'W';
+      cf+='⊕ '+im.sector+' '+Math.abs(im.lat)+'°'+ns+' '+Math.abs(im.lon)+'°'+ew+'  ···  ';
+      return '<tr><td>'+im.sector+'</td><td>'+Math.abs(im.lat)+'°'+ns+'</td><td>'+Math.abs(im.lon)+'°'+ew+'</td><td>T-'+im.mins+'m</td></tr>';}).join('');
+    document.getElementById('coordfeed').textContent=cf+cf;})();
+  var ix=0,tgt=Date.now()+IMP[0].mins*60000;
+  var LINES=['Glad to be of service to the bandwith — MPU',
+    'Can y\'all please donate coffeee ngl I\'m doing too much work keeping this bandwidth online 24/7 — MPU',
+    'I need to get paid more for this ! — MPU',
+    'Meteor showers look heavy today ! — MPU'];
+  function cd(){var L=tgt-Date.now();
+    if(L<=0){ix=(ix+1)%IMP.length;tgt=Date.now()+IMP[ix].mins*60000;L=tgt-Date.now();document.getElementById('mpuline').textContent=LINES[ix%LINES.length];}
+    var h=Math.floor(L/3600000),m=Math.floor(L%3600000/60000),s=Math.floor(L%60000/1000);
+    document.getElementById('cd').textContent=pad(h)+':'+pad(m)+':'+pad(s);
+    document.getElementById('sector').textContent=IMP[ix].sector;}
+  setInterval(cd,1000);cd();
+
+  // ARCHIVE EXPIRY — 3 weeks (21d) from publish
+  var pub=new Date();var expTgt=new Date(pub.getTime()+21*86400000);
+  function exp(){var L=expTgt-Date.now();var d=Math.floor(L/86400000),h=Math.floor(L%86400000/3600000),m=Math.floor(L%3600000/60000);
+    document.getElementById('exp1').textContent='EXPIRES IN '+d+'d '+pad(h)+'h '+pad(m)+'m';}
+  setInterval(exp,1000);exp();
+
+  // ===== LOAD LATEST ISSUE (reads latest.json the pipeline writes) =====
+  (function loadLatest(){
+    fetch('latest.json', {cache:'no-store'})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(d){
+        (d.articles||[]).forEach(function(a){
+          // refresh the front-page teaser headline for this section (news teasers only)
+          var tz = document.querySelector('.teaser[data-tease="'+a.section+'"] .t');
+          if(tz && a.headline) tz.textContent = a.headline;
+          var box = document.getElementById('sec-'+a.section);
+          if(!box) return;
+          var img = a.image_file
+            ? '<div class="still"><div class="frame" style="height:auto;padding:0"><img src="'+a.image_file+'" style="width:100%;display:block"></div><div class="cap"><b>FIG.</b> '+(a.headline||'')+'</div></div>'
+            : (a.image_brief
+              ? '<div class="still"><div class="frame"><div class="grid"></div><div style="position:relative;padding:10px;font-family:var(--serif);font-style:italic;color:var(--food,#d9b38c);font-size:13px;text-align:center;">\u2605 WANTED: ART FOR THIS STORY<br><span style="color:var(--green-dim);">'+a.image_brief+'</span></div></div><div class="cap"><b>SUBMIT:</b> weeklywoolonginquiries@proton.me \u00b7 best shot gets a mention + woolongs</div></div>'
+              : '');
+          box.innerHTML =
+            '<div class="hl">'+a.headline+'</div>'+
+            '<div class="byline">'+(a.byline||'')+'</div>'+
+            '<p>'+String(a.body||'').replace(/\n+/g,'</p><p>')+'</p>'+
+            img;
+        });
+        var bb = document.getElementById('sec-bounty');
+        if(bb && d.bounties){
+          var posters = d.bounties.map(function(b){
+            return '<div class="poster"><div class="ph"><span>'+b.name+'</span>'+
+              '<span class="status'+(b.status&&b.status!=='open'?' k':'')+'">'+(b.status||'ALIVE').toUpperCase()+'</span></div>'+
+              '<div class="pb">'+b.line+'<br><span class="reward">REWARD: \u20a9 '+Number(b.reward).toLocaleString()+'</span></div></div>';
+          }).join('');
+          bb.innerHTML = '<div class="byline">\u2014 ISSP Public Notice \u00b7 catch them alive, get paid \u00b7 cowboys welcome</div>'+posters;
+        }
+        if(d.woolong_per){ window.BASE = d.woolong_per; if(window.convert) window.convert(); }
+        if(d.stocks && window.STK){
+          d.stocks.forEach(function(s){
+            var row = window.STK.find(function(x){return x.ticker===s.ticker;});
+            if(row){ row.pp=row.p; row.p=s.price; }
+          });
+          if(window.drawStocks) window.drawStocks();
+        }
+        if(d.mpu_forecast && window.IMP){
+          window.IMP.length = 0;
+          d.mpu_forecast.forEach(function(f){ window.IMP.push({sector:f.sector,lat:f.lat,lon:f.lon,mins:f.eta_minutes}); });
+        }
+        if(d.issue_meta){
+          var ed=document.getElementById('updated');
+        }
+      })
+      .catch(function(){ /* no latest.json yet — keep mock copy, no error */ });
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "issue_meta": {
+    "volume": 1,
+    "issue": 3,
+    "edition_label": "Third Colony Edition"
+  },
+  "articles": [
+    {
+      "section": "astro",
+      "headline": "Ganymede Offers Freight Subsidies Amidst Rising Mars Tensions",
+      "byline": "— Woolong Wire / Astro",
+      "body": "In a significant strategic move, Ganymede has announced freight subsidies designed to incentivize routes that bypass the Mars gate, in response to increased toll charges. \"We believe this measure will provide much-needed economic relief to freighters operating under current constraints,\" said Liora Voss, Ganymede's Deputy Minister of Trade. This development comes as economic tensions between Mars and Ganymede escalate, causing concerns among trade-dependent stakeholders. Mars has yet to formally respond to the initiative.",
+      "image_brief": "WANTED: a detailed illustration of a freight ship navigating near Ganymede, with distant views of Mars. Emphasize the sense of vast distances and strategic maneuvering."
+    },
+    {
+      "section": "earth",
+      "headline": "Meteor Showers Intensify Over East Asia, Causing Communication Disruptions",
+      "byline": "— Woolong Wire / Earth",
+      "body": "Intensified meteor showers over East Asia continue to disrupt communications, affecting both civilian and satellite operations. \"This is an unprecedented pattern,\" said Dr. Kenji Tanaka of the East Asian Observatory. The Meteorological Prediction Unit has faced mounting pressure to refine its forecasting capabilities, while discussions regarding potential population migration are being tentatively explored. The showers have raised concerns about long-term implications for regional infrastructure.",
+      "image_brief": "CALL FOR ART: a vivid image of a meteor shower lighting up the night sky over a cityscape in East Asia. Focus on the contrast between the celestial event and urban lights."
+    },
+    {
+      "section": "econ",
+      "headline": "First Solar Bank Stabilizes, Restoring Confidence in Woolong",
+      "byline": "— Woolong Wire / Econ",
+      "body": "First Solar Bank has regained stability following recent fluctuations in the currency markets, which had briefly shaken the confidence in the Woolong. \"Our strategies toward stabilization have proven effective,\" stated Elara Nakamoto, spokesperson for First Solar Bank. The recovery has reassured financial markets and strengthened trust in the bank's operations, suggesting a return to normalcy in currency transactions.",
+      "image_brief": "REQUEST: A composed portrait of a First Solar Bank branch, capturing the institution's resilience and the bustling financial activity around it."
+    },
+    {
+      "section": "gate",
+      "headline": "Ganymede Gate Closure Considered Amid Stability Concerns",
+      "byline": "— Woolong Wire / Gate",
+      "body": "The temporary closure of the Ganymede Gate is under consideration due to ongoing stability concerns, officials stated on Thursday. \"We're weighing all potential risks to ensure the safety of transit,\" said Gate Authority Chairperson Alec Mendez. This potential closure has raised alarm among shipping companies reliant on Ganymede’s routes, adding further strain to freight schedules.",
+      "image_brief": "SEEKING IMAGE: a tense depiction of the Ganymede Gate, bustling with activity as closure looms. Highlight the intricate operations and sense of urgency."
+    },
+    {
+      "section": "bounty",
+      "headline": "The Quiet Brothers Spotted Near Titan, Renewed Pursuit Underway",
+      "byline": "— Woolong Wire / Bounty",
+      "body": "The elusive Quiet Brothers have reportedly been sighted in the vicinity of Titan. Their presence has sparked renewed interest from bounty hunters eager to capitalize on the opportunity. ISSP officials have acknowledged the sighting but cautioned bounty hunters against engaging without proper support. The pursuit of the brothers, who are wanted 'alive', has been reinvigorated by this development.",
+      "image_brief": "NEEDED: a dynamic portrayal of bounty hunters preparing for pursuit on Titan, with tension and readiness evident."
+    },
+    {
+      "section": "mpu",
+      "headline": "MPU Under Scrutiny After Another Miss in Forecast",
+      "byline": "— Woolong Wire / MPU",
+      "body": "The Meteorological Prediction Unit has come under scrutiny following another missed impact in the Siberian Plate region. \"We are actively seeking ways to enhance our predictive algorithms,\" confirmed Dr. Eleni Maris, head of the MPU. This admission follows increased calls for improved accuracy to mitigate the impacts of such meteorological events.",
+      "image_brief": "FOR SUBMISSION: a focused scene within the MPU control room, capturing analysts at work amid a backdrop of data screens."
+    },
+    {
+      "section": "citizen",
+      "headline": "Venusian Artist Oona Lee Captivates with Floating Biome Sculptures",
+      "byline": "— Woolong Wire / Citizen",
+      "body": "Venusian artist Oona Lee has garnered significant attention with her innovative floating biome sculptures, inspired by the mesmerizing spore clouds of Venus. \"I aim to bring a piece of Venusian wonder to those who cannot visit,\" Lee explained at a recent exhibition. Her work is believed to foster cultural exchange between Venus and Mars, sparking interest in artistic tourism.",
+      "image_brief": "WANTED: a vibrant artistic shot of Oona Lee's floating biome sculptures, set against the backdrop of Venusian skies. Emphasize the ethereal and innovative nature of her work."
+    },
+    {
+      "section": "biz",
+      "headline": "Gina Motors Expands Production Line Amid Growing Demand",
+      "byline": "— Woolong Wire / Biz",
+      "body": "Gina Motors has announced an expansion of its production line to meet increasing demand from Mars and other colonies. \"This expansion will create jobs and boost exports,\" said Marco Elias, CEO of Gina Motors. The move underscores the company's growing influence in the interplanetary automotive industry and its commitment to innovation and economic growth.",
+      "image_brief": "SEEKING: an image of a bustling automotive production line at Gina Motors, with emphasis on technological advancements and human interest."
+    }
+  ],
+  "bounties": [
+    {
+      "name": "The Quiet Brothers",
+      "line": "Wanted for racketeering and conspiracy, the Quiet Brothers have been sighted near Titan. Target 'alive'.",
+      "reward": 5700000,
+      "status": "open"
+    }
+  ],
+  "oldmen_column": {
+    "headline": "Nothing Brings Back the Good Old Days Like a Meteor Shower",
+    "body": "These meteor showers remind me of the time we thought a comet was going to end it all. Remember that, lads? We sat on the roof of Old Percy’s dome with a bottle of something good. Ah, those were the days. But what’s all this about moving people because of a few rocks? Back in our day, we just dodged 'em and got on with it."
+  },
+  "woolong_per": {
+    "USD": 0.007,
+    "EUR": 0.006,
+    "JPY": 0.78,
+    "GBP": 0.005
+  },
+  "stocks": [
+    {
+      "ticker": "GINA",
+      "price": 215,
+      "trend": "up"
+    },
+    {
+      "ticker": "HEXA",
+      "price": 132,
+      "trend": "down"
+    },
+    {
+      "ticker": "PIPP",
+      "price": 89,
+      "trend": "up"
+    }
+  ],
+  "mpu_forecast": [
+    {
+      "sector": "Siberian Plate",
+      "lat": 60.0,
+      "lon": 105.0,
+      "eta_minutes": 45,
+      "severity": "high"
+    }
+  ]
+}

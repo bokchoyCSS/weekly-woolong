@@ -1,0 +1,109 @@
+{
+  "issue_meta": {
+    "volume": 1,
+    "issue": 5,
+    "edition_label": "The Weekly Woolong"
+  },
+  "articles": [
+    {
+      "section": "astro",
+      "headline": "Mars flexes on Ganymede, infrastructure style",
+      "byline": "� Woolong Wire / Astro",
+      "body": "Mars isn't playing lowkey anymore. With Ganymede getting cozy with Venus, Mars is ramping up on space infrastructure projects. Resource allocations to these projects are on the rise, reflecting growing tensions with Ganymede.",
+      "image_brief": "WANTED: Illustration of Martian spaceports with construction cranes, cold landscape, red-dust tint."
+    },
+    {
+      "section": "earth",
+      "headline": "Meteor storm shakes West Australia, migration spikes",
+      "byline": "� Woolong Wire / Earth",
+      "body": "Meteor showers in Western Australia hit hard, leading to infrastructure damage and pushing folks to migrate. Economic burden from repairs also rises. Ts got wild quick.",
+      "image_brief": "WANTED: Sketch of a meteor shower over Western Australia, with damaged structures and people migrating."
+    },
+    {
+      "section": "econ",
+      "headline": "Woolong bounce-back shows cautious hope",
+      "byline": "� Woolong Wire / Econ",
+      "body": "Confidence in the Woolong is starting to peek up, as ISSP steps in with economic measures. The currency's newfound resilience has traders feeling cautiously optimistic. ISSP might have lowkey eaten this week.",
+      "image_brief": "WANTED: A graph of Woolong's currency trend with a subtle upward curve, ISSP insignia in corner."
+    },
+    {
+      "section": "gate",
+      "headline": "Bounty on Ganymede technician tweaks Gate security",
+      "byline": "� Woolong Wire / Gate",
+      "body": "An open bounty on a technician suspected of sabotaging the Ganymede Gate is live, drawing bounty hunters from all corners. Ganymede's Gate security is tightening in response. So it's like, fr fr, watch your step out there.",
+      "image_brief": "WANTED: Dramatic shot of Ganymede Gate with bounty hunters lurking, tense atmosphere."
+    },
+    {
+      "section": "bounty",
+      "headline": "New cowboys snag \"The Lighthouse\", Tharsis steadies",
+      "byline": "� Woolong Wire / Bounty",
+      "body": "Rufus \"The Lighthouse\" Obara is no longer lighting up the bounty scene. Newly formed bounty team nabbed him, steadying the Tharsis line routes. Eased some tension out there, easy now.",
+      "image_brief": "WANTED: Portrait of a gritty bounty hunter team with a subdued Rufus \"The Lighthouse\" Obara, Tharsis line in background."
+    },
+    {
+      "section": "mpu",
+      "headline": "MPU error throws meteor trust into the void",
+      "byline": "� Woolong Wire / MPU",
+      "body": "Our bad. MPU prediction error about Earth's meteor trajectory caused a stir and a dip in public trust. Suggestions for algorithm overhauls are on the table.",
+      "image_brief": "WANTED: Techy visualization of MPU prediction models with a meteor path overlay, glitchy aesthetic."
+    },
+    {
+      "section": "citizen",
+      "headline": "Mars' tech buzz, Okonkwo joins HexaChess hype",
+      "byline": "� Woolong Wire / Citizen",
+      "body": "Mara Okonkwo's switch to HexaChess is giving techies on Mars something to cheer about, boosting hopes for innovation potential. Fed the community's futuristic vibes fr.",
+      "image_brief": "WANTED: Vibrant scene of Mara Okonkwo in an advanced HexaChess game, tech motifs in background."
+    },
+    {
+      "section": "biz",
+      "headline": "Blue and Venus seal the deal; Ganymede stocks soar",
+      "byline": "� Woolong Wire / Biz",
+      "body": "Ganymede Blue's new export deal with Venus has their stocks climbing. The aquaculture sector's image is getting a steezy upgrade in the process, and Ganymede-Venus ties are solid.",
+      "image_brief": "WANTED: Artistic rendering of Ganymede Blue and Venus exchanging crates of aquaculture goods, stock market tickers."
+    }
+  ],
+  "bounties": [
+    {
+      "name": "Ganymede Technician",
+      "line": "Suspected of sabotage at Ganymede Gate, alive only.",
+      "reward": 50000,
+      "status": "open"
+    }
+  ],
+  "oldmen_column": {
+    "headline": "The Good Old Rants About Space Fish and Wrenches",
+    "body": "Ah, space-faring. Once a young man's game, now it's for anyone with a rocket and a wrench. Back in our day, we didn't have Venusian export deals or these high-tech chess games. Nope, just pure grit and a sack of woolong. New bounty hunters caught that Obara fella, you say? Well, it's about time. We're still waiting for someone to explain the excitement over a fancy cowpond on Ganymede. Anyway, here's hoping Mars doesn't decide to start a turf war with Ganymede over who builds more spaceports. Stay easy out there."
+  },
+  "woolong_per": {
+    "USD": 100,
+    "EUR": 108,
+    "JPY": 0.65,
+    "GBP": 127
+  },
+  "stocks": [
+    {
+      "ticker": "GINA",
+      "price": 56.9,
+      "trend": "up"
+    },
+    {
+      "ticker": "HEXA",
+      "price": 118.4,
+      "trend": "up"
+    },
+    {
+      "ticker": "PIPP",
+      "price": 37.2,
+      "trend": "down"
+    }
+  ],
+  "mpu_forecast": [
+    {
+      "sector": "meteor",
+      "lat": -27.0,
+      "lon": 133.0,
+      "eta_minutes": 0,
+      "severity": "severe"
+    }
+  ]
+}

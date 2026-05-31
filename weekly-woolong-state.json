@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "volume": 1,
+    "issue": 4,
+    "in_world_week": 4,
+    "in_world_date": "2026 — Year 4 after the Astral Gate accident",
+    "real_publish_date": "2026-05-31",
+    "edition_label": "Fourth Edition",
+    "masthead_note": "Earth-produced, Mars-relayed via the first colony satellite"
+  },
+  "economy": {
+    "woolong_per": {
+      "USD": 100,
+      "EUR": 108,
+      "JPY": 0.65,
+      "GBP": 127
+    },
+    "woolong_trend": "stabilized",
+    "woolong_note": "Currency stabilizes; confidence restored.",
+    "stocks": [
+      {
+        "ticker": "GINA",
+        "name": "Gina Motors",
+        "price": 4550,
+        "trend": "up",
+        "note": "Production expansion sees demand growth"
+      },
+      {
+        "ticker": "HEXA",
+        "name": "HexaChess",
+        "price": 1005,
+        "trend": "up",
+        "note": "New strategic partnerships announced"
+      },
+      {
+        "ticker": "PIPP",
+        "name": "Pippu Cola",
+        "price": 6400,
+        "trend": "down",
+        "note": "Decline continues amid soft drink competition"
+      }
+    ]
+  },
+  "bounty_board": [
+    {
+      "id": "b001",
+      "name": "Rufus \"The Lighthouse\" Obara",
+      "crime": "Hit four GATE tollbooths on the Tharsis line in one night",
+      "reward": 8000000,
+      "status": "captured",
+      "posted_issue": 1,
+      "tags": [
+        "heist",
+        "gate"
+      ]
+    },
+    {
+      "id": "b002",
+      "name": "Sister Annalise Voss",
+      "crime": "Ran a relief convoy that relieved itself of the relief; fraud on six moons",
+      "reward": 4500000,
+      "status": "open",
+      "posted_issue": 1,
+      "tags": [
+        "fraud",
+        "syndicate-adjacent"
+      ]
+    },
+    {
+      "id": "b003",
+      "name": "The Quiet Brothers",
+      "crime": "Hijacked a water freighter out of Europa",
+      "reward": 11500000,
+      "status": "open",
+      "posted_issue": 1,
+      "tags": [
+        "robbery",
+        "freight"
+      ]
+    }
+  ],
+  "factions": {
+    "Mars": {
+      "posture": "ascendant",
+      "tension_with": [
+        "Ganymede",
+        "Venus"
+      ],
+      "note": "acting like the capital; has the lights, the relay, the money"
+    },
+    "Ganymede": {
+      "posture": "defiant",
+      "tension_with": [
+        "Mars"
+      ],
+      "note": "walked out of the Tharsis Accord; fringe ocean moon"
+    },
+    "Venus": {
+      "posture": "smug",
+      "tension_with": [
+        "Mars"
+      ],
+      "note": "prosperous, quiet rival; spore problem brewing"
+    },
+    "Belt": {
+      "posture": "lawless",
+      "tension_with": [],
+      "note": "salvage and mining frontier; syndicate recruiting ground"
+    },
+    "RedDragon": {
+      "posture": "forming",
+      "tension_with": [
+        "ISSP"
+      ],
+      "note": "early syndicate muscle; watching the new Woolong"
+    }
+  },
+  "locations": {
+    "Earth": {
+      "status": "bombarded",
+      "note": "showers near their worst; 1.5B survivors; sector government"
+    },
+    "GanymedeGate": {
+      "status": "temporary closure",
+      "note": "further inspections leading to extended shutdown"
+    },
+    "Mars": {
+      "status": "rising",
+      "note": "land rush, first homegrown factory; hiring boom"
+    },
+    "Titan": {
+      "status": "raw frontier",
+      "note": "NO WAR YET — that is the 2060s; keep desolate, unclaimed"
+    }
+  },
+  "businesses": [
+    {
+      "name": "GATE Corporation",
+      "sector": "transit/infrastructure",
+      "canon": true,
+      "state": "reopening gates nervously; site sponsor"
+    },
+    {
+      "name": "ISSP",
+      "sector": "institution",
+      "canon": true,
+      "state": "just launched the cowboy bounty program"
+    },
+    {
+      "name": "Cherious Medical",
+      "sector": "pharma",
+      "canon": true,
+      "state": "powerful, slightly sinister; keep within allow-list"
+    },
+    {
+      "name": "WcDonald's",
+      "sector": "food",
+      "canon": true,
+      "state": "survived the apocalypse intact; comic texture"
+    },
+    {
+      "name": "Big Shot",
+      "sector": "media",
+      "canon": true,
+      "state": "bounty broadcast; cross-promo for our Bounty desk"
+    },
+    {
+      "name": "Gina Motors",
+      "sector": "transport",
+      "ticker": "GINA",
+      "canon": false,
+      "state": "expanding production line due to high demand"
+    },
+    {
+      "name": "HexaChess",
+      "sector": "tech/gaming",
+      "ticker": "HEXA",
+      "canon": false,
+      "state": "hex-chess craze; runs the Open"
+    },
+    {
+      "name": "Pippu Cola",
+      "sector": "beverage",
+      "ticker": "PIPP",
+      "canon": false,
+      "state": "sells small comforts to a system with nothing"
+    },
+    {
+      "name": "Helios Solar Freight",
+      "sector": "cargo",
+      "canon": false,
+      "state": "the trucks of the system"
+    },
+    {
+      "name": "Lumen Relay Co.",
+      "sector": "comms",
+      "canon": false,
+      "state": "runs the Mars relay this paper rides on"
+    },
+    {
+      "name": "Ganymede Blue",
+      "sector": "aquaculture",
+      "canon": false,
+      "state": "sea-rat and protein exports; affected by Mars tariffs"
+    },
+    {
+      "name": "Tharsis Dome Works",
+      "sector": "construction",
+      "canon": false,
+      "state": "builds Mars habitats; announcing hiring boom"
+    },
+    {
+      "name": "First Solar Bank",
+      "sector": "finance",
+      "canon": false,
+      "state": "stabilized post-wobble; restored confidence"
+    }
+  ],
+  "characters": [
+    {
+      "id": "mpu",
+      "name": "MPU",
+      "role": "forecast AI / surviving satellite",
+      "state": "missed another impact; under pressure to adjust",
+      "visual": "battered orbital satellite interior; green phosphor readouts; one lens turned toward a wounded Earth"
+    },
+    {
+      "id": "oldmen",
+      "name": "Antonio, Carlos & Jobim",
+      "role": "op-ed columnists / retired gate-builders",
+      "state": "lost the Alba City domino league; insist they built the table",
+      "visual": "three weathered old men at a card table, mismatched, never quite looking at each other"
+    },
+    {
+      "id": "okonkwo",
+      "name": "Mara Okonkwo",
+      "role": "citizen — relay night-shift tech",
+      "state": "won the inaugural HexaChess Open",
+      "visual": "young woman, 19, oil-smudged coveralls, glow of an old terminal on her face"
+    },
+    {
+      "id": "reyes",
+      "name": "Tomas Reyes",
+      "role": "citizen — freelance surveyor",
+      "state": "mapped a drained Ganymede shelf on foot",
+      "visual": "lean figure in a worn exo-suit on a grey tidal flat, hand-drawn map under one arm"
+    },
+    {
+      "id": "nguyen",
+      "name": "Lila Nguyen",
+      "role": "citizen — Belt salvager",
+      "state": "discovered rare ore deposit",
+      "visual": "resourceful engineer amidst asteroid debris, sensor scanner in hand"
+    },
+    {
+      "id": "anwar",
+      "name": "Navid Anwar",
+      "role": "citizen — Io-based terraforming technician",
+      "state": "recognized for soil recycling method",
+      "visual": "enthusiastic engineer tinkering with soil samples in a small depot on Io"
+    }
+  ],
+  "threads": [
+    {
+      "id": "t_accord",
+      "title": "The Tharsis Accord & the Ganymede holdout",
+      "status": "developing",
+      "stage": 4,
+      "sections": [
+        "astro",
+        "gate"
+      ],
+      "summary": "Mars applies pressure on Ganymede by increasing gate tolls.",
+      "next_beats": [
+        "Mars applies more pressure via trade",
+        "a third party brokers or exploits"
+      ]
+    },
+    {
+      "id": "t_woolong",
+      "title": "Will the new Woolong hold?",
+      "status": "developing",
+      "stage": 4,
+      "sections": [
+        "econ",
+        "biz"
+      ],
+      "summary": "Slight wobble at First Solar Bank; minor currency dip.",
+      "next_beats": [
+        "syndicate manipulation attempt",
+        "a bank stabilization",
+        "confidence restored"
+      ]
+    },
+    {
+      "id": "t_cowboys",
+      "title": "The cowboy program finds its feet",
+      "status": "developing",
+      "stage": 4,
+      "sections": [
+        "bounty",
+        "citizen"
+      ],
+      "summary": "Rufus \"The Lighthouse\" captured by a bounty hunter. Program gains credibility.",
+      "next_beats": [
+        "ISSP vs syndicate friction",
+        "competition among cowboys"
+      ]
+    },
+    {
+      "id": "t_ganymede_gate",
+      "title": "The Ganymede gate is not as stable as they say",
+      "status": "developing",
+      "stage": 4,
+      "sections": [
+        "gate",
+        "econ",
+        "earth"
+      ],
+      "summary": "Delay cascade affects freight schedules; economic impact noted.",
+      "next_beats": [
+        "a culprit surfaces on the bounty board",
+        "temporary closure considered"
+      ]
+    },
+    {
+      "id": "t_mars_industry",
+      "title": "Mars learns to build for itself",
+      "status": "developing",
+      "stage": 4,
+      "sections": [
+        "biz",
+        "astro",
+        "citizen"
+      ],
+      "summary": "Tharsis Dome Works announces a hiring boom on Mars.",
+      "next_beats": [
+        "a supply-chain snag",
+        "a rival on Venus",
+        "expansion of Mars infrastructure"
+      ]
+    },
+    {
+      "id": "t_showers",
+      "title": "The showers are getting worse",
+      "status": "background",
+      "stage": 4,
+      "sections": [
+        "mpu",
+        "earth"
+      ],
+      "summary": "Meteor showers over Coral Sea heavier than expected; MPU under review.",
+      "next_beats": [
+        "a forecast MPU gets wrong",
+        "a migration surge",
+        "reallocation of resources"
+      ]
+    }
+  ],
+  "mpu_forecast": [
+    {
+      "sector": "INDIAN OCEAN",
+      "lat": -20,
+      "lon": 80,
+      "eta_minutes": 2.1,
+      "severity": "severe"
+    },
+    {
+      "sector": "SIBERIAN PLATE",
+      "lat": 65,
+      "lon": 95,
+      "eta_minutes": 5.6,
+      "severity": "moderate"
+    },
+    {
+      "sector": "PACIFIC RIM",
+      "lat": -29,
+      "lon": 139,
+      "eta_minutes": 7.3,
+      "severity": "light"
+    },
+    {
+      "sector": "EAST ASIA",
+      "lat": 36,
+      "lon": 140,
+      "eta_minutes": 10.4,
+      "severity": "moderate"
+    }
+  ],
+  "ledger": {
+    "issue_2": [
+      "Mars applies pressure on Ganymede by increasing gate tolls.",
+      "Meteor showers over the Coral Sea heavier than expected, causing minor damage.",
+      "The First Solar Bank experiences a slight wobble due to syndicate pressure.",
+      "A delay cascade at Ganymede Gate affects freight schedules across the system.",
+      "Rufus \"The Lighthouse\" Obara captured by an unknown bounty hunter.",
+      "MPU missed forecasting a major impact over the Coral Sea, prompting reviews.",
+      "Lila Nguyen, a Belt salvager, discovers rare ore deposit amidst debris, drawing attention.",
+      "Tharsis Dome Works announces a hiring boom on Mars."
+    ],
+    "issue_3": [
+      "Ganymede makes a strategic countermove by offering freight subsidies to bypass Mars gate tolls.",
+      "Meteor showers continue to intensify over East Asia, causing further disruptions in communication.",
+      "First Solar Bank stabilizes following the currency wobble; confidence in Woolong restored.",
+      "A temporary closure of Ganymede Gate considered due to ongoing stability concerns.",
+      "The Quiet Brothers spotted near Titan; new cowboy interest sparks pursuit.",
+      "Forecast missed another impact in the Siberian Plate; calls for algorithm adjustments.",
+      "Oona Lee, a Venusian artist, gains attention for her floating biome sculptures inspired by Venusian spore clouds.",
+      "Gina Motors announces the expansion of its production line to accommodate growing demand from Mars and beyond."
+    ],
+    "issue_4": [
+      "Mars increases trade pressure on Ganymede by imposing tariffs on oceanic products.",
+      "Meteor showers over Indian Ocean cause unexpected sea level shifts, prompting emergency protocols.",
+      "RedDragon syndicate attempts to manipulate First Solar Bank's stock through insider trading; ISSP investigates.",
+      "Ganymede Gate's temporary closure extended as further inspections are conducted.",
+      "The Quiet Brothers narrowly escape capture on Titan; tension mounts among bounty hunters.",
+      "MPU forecasts a severe impact near the Siberian Plate but issues remain with accuracy.",
+      "Navid Anwar, an Io-based terraforming technician, gains recognition for pioneering a new soil recycling method.",
+      "Venusian company, SporeTech, announces a breakthrough in controlling Venusian spore clouds."
+    ]
+  }
+}
