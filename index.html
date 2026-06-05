@@ -7,6 +7,7 @@
 <meta name="description" content="The Weekly Woolong is a Cowboy Bebop fan project: an interactive in-universe newspaper set across the solar system — bounty hunters, Woolong markets, ISSP reports, food, and more. Updated weekly.">
 <meta name="keywords" content="Cowboy Bebop, Cowboy Bebop fan site, anime fan project, Woolong, ISSP, bounty hunters, space western anime, Bebop universe, cool anime projects, Cowboy Bebop newspaper, Spike Spiegel universe, 2026 Bebop AU">
 <meta name="author" content="bokchoyCSS, Zi3600">
+<meta name="google-site-verification" content="4xCifUDEPBiAaDMhzXOILqRUheP_c9SRPJZg8QYnibU" />
 <link rel="canonical" href="https://theweeklywoolong.xyz/">
 
 <!-- Open Graph -->
@@ -129,7 +130,8 @@
   .masthead h1{font-family:var(--serif);font-size:62px;letter-spacing:3px;font-weight:700;color:var(--green);line-height:0.95;cursor:pointer;}
   .masthead .tag{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--green-dim);margin-top:4px;}
   .masthead .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;margin-top:12px;border-top:1px solid var(--green-dim);padding-top:6px;color:var(--green-dim);}
-  .newburst{position:absolute;top:8px;right:10px;border:1px solid var(--pink);color:var(--pink);font-family:var(--serif);font-weight:700;font-size:13px;padding:3px 6px;transform:rotate(6deg);text-align:center;}
+  .newburst{position:absolute;top:8px;right:10px;border:1px solid var(--pink);color:var(--pink);font-family:var(--serif);font-weight:700;font-size:13px;padding:3px 6px;transform:rotate(6deg);text-align:center;cursor:pointer;}
+  .newburst:hover{background:var(--pink);color:#000;}
   .counter{color:var(--yellow);}
 
   .ticker{border:1px solid var(--green);border-top:none;overflow:hidden;white-space:nowrap;font-size:13px;padding:4px 0;color:var(--red);}
@@ -278,6 +280,26 @@
   footer{border:1px solid var(--green);margin-top:12px;padding:10px;font-size:11px;color:var(--green-dim);text-align:center;line-height:1.7;}
   footer a{color:var(--green-dim);}
   .construction{color:var(--yellow);border:1px solid var(--yellow);display:inline-block;padding:2px 8px;margin:6px 0;}
+
+  /* ── LANGUAGE ROW ────────────────────────────────────────────────── */
+  .langcol{position:absolute;left:8px;top:8px;display:flex;flex-direction:row;gap:3px;align-items:center;flex-wrap:wrap;max-width:220px;}
+  .langbtn{background:none;border:1px solid var(--green-dim);color:var(--green-dim);font-family:var(--mono);font-size:9px;letter-spacing:.3px;padding:2px 5px;width:auto;cursor:pointer;text-align:center;transition:border-color .1s,color .1s;line-height:1.3;}
+  .langbtn:hover{border-color:var(--green);color:var(--green);background:#0a0a0a;}
+  .langbtn.lang-active{border-color:var(--yellow);color:var(--yellow);}
+
+  /* ── NEW AROUND HERE BANNER ─────────────────────────────────────── */
+  .newhere{border:1px solid var(--green);border-top:none;padding:6px 36px 6px 10px;font-size:12px;display:flex;align-items:baseline;gap:10px;position:relative;background:#020702;}
+  .newhere-label{color:var(--yellow);font-weight:700;letter-spacing:1px;white-space:nowrap;flex-shrink:0;}
+  .newhere-body{color:var(--green-dim);font-family:var(--serif);font-size:13px;line-height:1.4;}
+  .newhere-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:1px solid var(--green-dim);color:var(--green-dim);font-family:var(--mono);font-size:13px;width:18px;height:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;line-height:1;}
+  .newhere-close:hover{border-color:var(--red);color:var(--red);}
+  [dir="rtl"] .newhere{padding:6px 10px 6px 36px;}
+  [dir="rtl"] .newhere-close{right:auto;left:8px;}
+
+  @media(max-width:780px){
+    .langcol{position:static;max-width:100%;justify-content:center;padding:6px 0 2px;}
+    .masthead h1{font-size:38px;}
+  }
 </style>
 </head>
 <body>
@@ -289,6 +311,16 @@
 
   <header class="masthead">
     <div class="newburst">NEW!<br>VOL.1</div>
+
+    <!-- Language selector -->
+    <div class="langcol" id="langcol">
+      <button class="langbtn" onclick="setLang('ar')" data-lang="ar" title="Arabic">عربي</button>
+      <button class="langbtn lang-active" onclick="setLang('en')" data-lang="en" title="English">EN</button>
+      <button class="langbtn" onclick="setLang('fr')" data-lang="fr" title="French">FR</button>
+      <button class="langbtn" onclick="setLang('zh')" data-lang="zh" title="Chinese">中文</button>
+      <button class="langbtn" onclick="setLang('ja')" data-lang="ja" title="Japanese">日本語</button>
+    </div>
+
     <h1 onclick="go('home')">The Weekly Woolong</h1>
     <div class="tag">"The n1 rising paper around the solar system"</div>
     <div class="meta">
@@ -312,6 +344,13 @@
     <a class="tech" data-go="tech" onclick="go('tech')">Engineering</a>
     <a class="arch" data-go="arch" onclick="go('arch')">Archive</a>
   </nav>
+
+  <!-- New around here banner -->
+  <div class="newhere" id="newhere">
+    <span class="newhere-label" id="nh-label" style="cursor:pointer;text-decoration:underline;" onclick="go('new')">NEW AROUND HERE?</span>
+    <span class="newhere-body" id="nh-body">Click to find out what this project is — <a onclick="go('new')" style="color:var(--yellow);">read the quick intro ▸</a></span>
+    <button class="newhere-close" onclick="dismissNewHere()" title="Dismiss">×</button>
+  </div>
 
   <div class="wrap">
     <main class="main">
@@ -395,7 +434,7 @@
 
       <!-- CITIZEN STORY -->
       <section class="view" data-v="citizen">
-        <div class="block citizen"><div class="hd"><span>Citizen Story</span><span>THE SYSTEM IS MADE OF PEOPLE</span></div><div class="body" id="sec-citizen">
+        <div class="block citizen"><div class="hd"><span>Citizen Story</span></div><div class="body" id="sec-citizen">
           <div class="hl">Mara Okonkwo, 19, Won the HexaChess Open With an Engine She Wrote in a Relay Maintenance Bay</div>
           <div class="byline">— Woolong Wire / Citizens Desk</div>
           <p>She works the night shift keeping the Mars relay's coolant lines from freezing — the same relay that lets you read this. Between rounds, on a terminal older than she is, Mara Okonkwo taught herself to write a HexaChess engine. This week it beat forty veterans and a syndicate-backed favorite to take the inaugural Open. Asked for her strategy she said she didn't have one, she just had a lot of quiet nights.</p>
@@ -431,7 +470,7 @@
 
       <!-- COOKBOOK / FOODBOOK (static — not AI-updated) -->
       <section class="view" data-v="food">
-        <div class="block food"><div class="hd"><span>The Foodbook</span><span>KEPT BY HAND · NOT BY IRSI</span></div><div class="body">
+        <div class="block food"><div class="hd"><span>The Foodbook</span></div><div class="body">
           <div class="foodnote">The one page the satellite doesn't touch. No forecasts, no bounties, no markets — just the recipes that keep a crew alive between jobs. Updated by a person, when a person feels like it.</div>
 
           <div class="recipe" style="border-top:none;padding-top:0;">
@@ -548,6 +587,37 @@
           <p style="font-family:var(--serif);font-size:15px;">Our target, all in: <b style="color:var(--yellow);">under 5 liters of water a year</b> for the entire project. Roughly a couple of bottles. We'll keep that number honest, and if it ever creeps, we'll say so here.</p>
           <p style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--green-dim);">— The editors. Earth-produced, Mars-relayed, water budget watched.</p>
         </div></div>
+      </section>
+
+      <!-- NEW / ABOUT -->
+      <section class="view" data-v="new">
+        <div class="block" style="border-color:var(--green-dim);">
+          <div class="hd" style="color:var(--green-dim);border-color:var(--green-dim);">
+            <span>About This Project</span>
+          </div>
+          <div class="body">
+            <div class="hl">What This Is</div>
+            <div class="byline">— bokchoyCSS &amp; Zi3600</div>
+            <p>The Weekly Woolong is a fan project set inside the Cowboy Bebop universe. It's an in-universe newspaper — the kind of thing that might actually exist in 2071, relayed across the solar system between bounty hunters, drifters, and whoever's left keeping the lights on.</p>
+            <p>Everything here follows the actual Watanabe/Cowboy Bebop canon. The lore, the timeline, the factions, the geography — we don't invent on top of it, we write inside it.</p>
+
+            <div class="hl" style="margin-top:14px;">How the Articles Work</div>
+            <ul style="font-family:var(--serif);font-size:15px;list-style:none;margin:10px 0 14px;">
+              <li style="padding:5px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ The IRSI</b> — the Independent Ring of Satellite Intelligence — is our AI system. It's trained on Cowboy Bebop lore and reads source material before generating each article. It doesn't improvise; it works within the canon.</li>
+              <li style="padding:5px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ Articles update weekly</b>, around the weekend. Each section — politics, economy, bounties, citizen stories — gets a fresh filing every issue.</li>
+              <li style="padding:5px 0;border-bottom:1px dashed var(--green-faint);"><b style="color:var(--green);">▸ Human editors</b> set the rules, check the lore, and keep the voice consistent. The IRSI writes within those boundaries.</li>
+              <li style="padding:5px 0;"><b style="color:var(--green);">▸ This is non-commercial.</b> No ads, no paywall. Just a fan project we put work into because we think Cowboy Bebop deserves a proper living universe.</li>
+            </ul>
+            <p style="font-family:var(--serif);font-size:14px;color:var(--green-dim);">We hope you enjoy it as much as we do. Come back weekends for the new issue.</p>
+
+            <div style="border:1px solid var(--yellow);margin-top:18px;padding:14px;text-align:center;background:#0a0800;">
+              <div style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--yellow);letter-spacing:1px;margin-bottom:8px;">WANT TO CONTRIBUTE?</div>
+              <p style="font-family:var(--serif);font-size:14px;color:var(--green-dim);margin-bottom:12px;">Server costs, AI tools, and the time it takes to keep this running all add up. If you'd like to support the project, a coffee helps more than you'd think.</p>
+              <a href="https://ko-fi.com/bokchoydevbudgets/goal?g=16" target="_blank" style="display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font-family:var(--mono);font-weight:700;font-size:13px;padding:8px 18px;text-decoration:none;letter-spacing:1px;">⊕ Ko-Fi — buy us a coffee</a>
+              <p style="font-size:11px;color:var(--green-dim);margin-top:10px;font-family:var(--mono);">Artists and writers can also reach us at <a href="mailto:weeklywoolonginquiries@proton.me" style="color:var(--green-dim);">weeklywoolonginquiries@proton.me</a> — see the Artistic Bounties in the sidebar.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ARCHIVE -->
@@ -695,6 +765,82 @@
 
 <script>
   function pad(n){return String(n).padStart(2,'0');}
+
+  // ── LANGUAGE / ACCESSIBILITY ──────────────────────────────────────
+  var LANGS={
+    en:{dir:'ltr',lang:'en',
+      nav:{astro:'Astro-Politics',earth:'Earth Politics',econ:'Economy',biz:'Business',gate:'GATE Protocol',bounty:'Bounty',citizen:'Citizen Story',irsi:'Independent Ring of Satellite Intelligence',food:'Cookbook',tech:'Engineering',arch:'Archive'},
+      tagline:'“The n1 rising paper around the solar system”',
+      converter:'Woolong Converter',exchange:'Solar Exchange',
+      nh_label:'NEW AROUND HERE?',
+      nh_body:"Hey — welcome. This is the solar system’s rising paper. Start anywhere: the Bounty Board, the IRSI forecast, or just the front page. The Foodbook’s always open."},
+    ar:{dir:'rtl',lang:'ar',
+      nav:{astro:'السياسة الفلكية',earth:'سياسة الأرض',econ:'الاقتصاد',biz:'الأعمال',gate:'بروتوكول البوابة',bounty:'مكافآت الصيد',citizen:'قصة المواطن',irsi:'حلقة الأقمار الاصطناعية',food:'كتاب الطعام',tech:'الهندسة',arch:'الأرشيف'},
+      tagline:'“الصحيفة الأولى في المجموعة الشمسية”',
+      converter:'محوّل الوولونغ',exchange:'البورصة الشمسية',
+      nh_label:'جديد هنا؟',
+      nh_body:'مرحباً — أهلاً بك في صحيفة المجموعة الشمسية الصاعدة. ابدأ من أي مكان: لوحة المكافآت، توقعات IRSI، أو الصفحة الأمامية. كتاب الطعام دائماً مفتوح.'},
+    ja:{dir:'ltr',lang:'ja',
+      nav:{astro:'宇宙政治',earth:'地球政治',econ:'経済',biz:'ビジネス',gate:'ゲート協定',bounty:'賞金',citizen:'市民の話',irsi:'衛星情報網',food:'料理本',tech:'エンジニアリング',arch:'アーカイブ'},
+      tagline:'「太陽系ナンバーワンの新聞」',
+      converter:'ウーロン換算機',exchange:'太陽系取引所',
+      nh_label:'初めての方へ',
+      nh_body:'ようこそ。太陽系で急成長中の新聞です。賞金ボード、IRSI予報、フロントページ — どこからでもどうぞ。料理本はいつでも開いています。'},
+    zh:{dir:'ltr',lang:'zh',
+      nav:{astro:'太空政治',earth:'地球政治',econ:'经济',biz:'商业',gate:'星门协议',bounty:'赏金',citizen:'市民故事',irsi:'卫星情报网',food:'食谱',tech:'工程',arch:'档案'},
+      tagline:'“太阳系第一新兴报纸”',
+      converter:'窝路换算',exchange:'太阳系交易所',
+      nh_label:'新来的？',
+      nh_body:'欢迎 — 这是太阳系最新兴的报纸。从赏金板、IRSI预报或头版开始都行。食谱随时可以翻阅。'},
+    fr:{dir:'ltr',lang:'fr',
+      nav:{astro:'Astro-Politique',earth:'Politique Terrestre',econ:'Économie',biz:'Commerce',gate:'Protocole GATE',bounty:'Primes',citizen:'Histoire de Citoyen',irsi:'Réseau de Satellites Indépendants',food:'Livre de Cuisine',tech:'Ingénierie',arch:'Archives'},
+      tagline:'“Le journal n°1 du système solaire”',
+      converter:'Convertisseur Woolong',exchange:'Bourse Solaire',
+      nh_label:'NOUVEAU PAR ICI ?',
+      nh_body:'Bienvenue — le journal montant du système solaire. Commencez par le tableau des primes, les prévisions IRSI, ou la une. Le Livre de Cuisine est toujours ouvert.'}
+  };
+
+  function setLang(code){
+    var L=LANGS[code]||LANGS.en;
+    // direction + lang attribute
+    document.documentElement.setAttribute('dir',L.dir);
+    document.documentElement.setAttribute('lang',L.lang);
+    // nav labels
+    document.querySelectorAll('nav a[data-go]').forEach(function(a){
+      var k=a.dataset.go;if(L.nav[k])a.textContent=L.nav[k];
+    });
+    // tagline
+    var tg=document.querySelector('.masthead .tag');if(tg)tg.textContent=L.tagline;
+    // widgets
+    var wh=document.querySelectorAll('.widget .wh');
+    wh.forEach(function(h){
+      var txt=h.querySelector('span:first-child');
+      if(!txt)return;
+      if(txt.textContent.match(/Woolong Converter|محوّل|換算機|窝路|Convertisseur/))txt.textContent=L.converter;
+      if(txt.textContent.match(/Solar Exchange|البورصة|取引所|交易所|Bourse/))txt.textContent=L.exchange;
+    });
+    // new around here
+    var nl=document.getElementById('nh-label');if(nl)nl.textContent=L.nh_label;
+    var nb=document.getElementById('nh-body');if(nb)nb.textContent=L.nh_body;
+    // active button
+    document.querySelectorAll('.langbtn').forEach(function(b){
+      b.classList.toggle('lang-active',b.dataset.lang===code);
+    });
+    // persist
+    try{localStorage.setItem('tww-lang',code);}catch(e){}
+  }
+
+  // New around here — dismiss with localStorage
+  function dismissNewHere(){
+    var el=document.getElementById('newhere');
+    if(el)el.style.display='none';
+    try{localStorage.setItem('tww-newhere','1');}catch(e){}
+  }
+  (function(){
+    try{if(localStorage.getItem('tww-newhere')==='1'){var el=document.getElementById('newhere');if(el)el.style.display='none';}}catch(e){}
+    // restore saved language
+    try{var saved=localStorage.getItem('tww-lang');if(saved&&LANGS[saved])setLang(saved);}catch(e){}
+  })();
 
   // PAGE ROUTER (real .html files on deploy; JS views here so it previews in one click)
   function go(v){
