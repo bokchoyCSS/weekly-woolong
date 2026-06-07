@@ -1,11 +1,11 @@
 {
   "meta": {
     "volume": 1,
-    "issue": 5,
-    "in_world_week": 5,
+    "issue": 7,
+    "in_world_week": 7,
     "in_world_date": "2026 — Year 4 after the Astral Gate accident",
-    "real_publish_date": "2026-05-31",
-    "edition_label": "Fifth Edition",
+    "real_publish_date": "2026-06-07",
+    "edition_label": "Seventh Edition",
     "masthead_note": "Earth-produced, Mars-relayed via the first colony satellite"
   },
   "economy": {
@@ -21,30 +21,30 @@
       {
         "ticker": "GINA",
         "name": "Gina Motors",
-        "price": 4600,
-        "trend": "up",
-        "note": "Continued production expansion supporting share growth"
+        "price": 4500,
+        "trend": "down",
+        "note": "Delays in Mars facility due to trade issues impact investor confidence"
       },
       {
         "ticker": "HEXA",
         "name": "HexaChess",
-        "price": 1020,
+        "price": 1060,
         "trend": "up",
-        "note": "Sustained interest in strategic partnerships"
+        "note": "New partnerships and expansions into virtual reality"
       },
       {
         "ticker": "PIPP",
         "name": "Pippu Cola",
-        "price": 6350,
+        "price": 6250,
         "trend": "down",
-        "note": "Competition pressures continue to impact sales"
+        "note": "Ongoing competition and market saturation effects"
       },
       {
         "ticker": "FSB",
         "name": "First Solar Bank",
-        "price": 1950,
+        "price": 2050,
         "trend": "up",
-        "note": "Reaffirmed stability brings in investors; shares rebound"
+        "note": "Continues to benefit from stable currency environment"
       }
     ]
   },
@@ -78,7 +78,7 @@
       "name": "The Quiet Brothers",
       "crime": "Hijacked a water freighter out of Europa",
       "reward": 11500000,
-      "status": "open",
+      "status": "captured",
       "posted_issue": 1,
       "tags": [
         "robbery",
@@ -188,7 +188,7 @@
       "sector": "transport",
       "ticker": "GINA",
       "canon": false,
-      "state": "expanding production line due to high demand"
+      "state": "new Mars facility opening to meet growing demand"
     },
     {
       "name": "HexaChess",
@@ -241,7 +241,7 @@
       "id": "irsi",
       "name": "Independent Ring of Satellite Intelligence",
       "role": "forecast AI / surviving satellite",
-      "state": "successfully predicted impact, easing pressure",
+      "state": "struggling with accuracy despite recent success",
       "visual": "battered orbital satellite interior; green phosphor readouts; one lens turned toward a wounded Earth"
     },
     {
@@ -285,6 +285,20 @@
       "role": "citizen — Belt miner",
       "state": "awarded for innovative safety measures",
       "visual": "determined miner in safety gear, standing amid asteroid rocks with a torch"
+    },
+    {
+      "id": "conti",
+      "name": "Mario Conti",
+      "role": "citizen — dome farmer on Venus",
+      "state": "advocates for spore-resistant crops",
+      "visual": "determined farmer inspecting dome crops inside a vibrant, detailed biosphere"
+    },
+    {
+      "id": "murakami",
+      "name": "Kaito Murakami",
+      "role": "citizen — drone operator on Callisto",
+      "state": "captures stunning footage of rare meteor shower",
+      "visual": "excited drone operator controlling a UAV under a starry sky"
     }
   ],
   "threads": [
@@ -292,42 +306,27 @@
       "id": "t_accord",
       "title": "The Tharsis Accord & the Ganymede holdout",
       "status": "developing",
-      "stage": 5,
+      "stage": 6,
       "sections": [
         "astro",
         "gate"
       ],
-      "summary": "Mars intensifies tactics, seizing a Ganymede cargo ship in disputed space.",
+      "summary": "Ganymede retaliates by capturing a Mars freight vessel in disputed space.",
       "next_beats": [
-        "Ganymede retaliates, escalating tensions",
-        "intervention by an external power"
-      ]
-    },
-    {
-      "id": "t_woolong",
-      "title": "Will the new Woolong hold?",
-      "status": "resolved",
-      "stage": 5,
-      "sections": [
-        "econ",
-        "biz"
-      ],
-      "summary": "First Solar Bank reaffirms stability post-investigation, shares rebound.",
-      "next_beats": [
-        "a syndicate makes a big play",
-        "helios sides with ISSP"
+        "intervention by an external power",
+        "negotiations intensify"
       ]
     },
     {
       "id": "t_cowboys",
       "title": "The cowboy program finds its feet",
       "status": "developing",
-      "stage": 4,
+      "stage": 6,
       "sections": [
         "bounty",
         "citizen"
       ],
-      "summary": "New bounty on Ganymede Gate saboteur; cowboy interest rises.",
+      "summary": "Sister Annalise Voss reportedly seen in Io's underground markets, prompting a new wave of bounty hunter activity.",
       "next_beats": [
         "a cowboy challenges RedDragon",
         "rising fame of cowboy hunters"
@@ -337,29 +336,29 @@
       "id": "t_ganymede_gate",
       "title": "The Ganymede gate is not as stable as they say",
       "status": "developing",
-      "stage": 5,
+      "stage": 7,
       "sections": [
         "gate",
         "econ",
         "earth"
       ],
-      "summary": "Suspected sabotage delays Ganymede Gate reopening.",
+      "summary": "Ganymede Gate's potential saboteur identified as a rogue element within the Mars Coalition.",
       "next_beats": [
-        "saboteur gets identified",
-        "consolidation of space routes"
+        "saboteur gets captured",
+        "diplomatic fallout"
       ]
     },
     {
       "id": "t_mars_industry",
       "title": "Mars learns to build for itself",
       "status": "developing",
-      "stage": 5,
+      "stage": 7,
       "sections": [
         "biz",
         "astro",
         "citizen"
       ],
-      "summary": "Helios Solar Freight partners with Mars Coalition.",
+      "summary": "Gina Motors' Mars facility faces delays in supply chain due to increased tariffs on Belt imports.",
       "next_beats": [
         "Mars infrastructure expands",
         "competition heats up on Venus"
@@ -369,69 +368,64 @@
       "id": "t_showers",
       "title": "The showers are getting worse",
       "status": "background",
-      "stage": 5,
+      "stage": 7,
       "sections": [
         "irsi",
         "earth"
       ],
-      "summary": "Meteor showers hit Pacific Rim with force; IRSI regains trust.",
+      "summary": "IRSI's forecast accuracy improves, predicting a light meteor impact over Greenland.",
       "next_beats": [
         "migration patterns start changing",
         "an unexpected meteor crisis"
+      ]
+    },
+    {
+      "id": "t_uranus_signal",
+      "title": "The mysterious signal from Uranus",
+      "status": "developing",
+      "stage": 1,
+      "sections": [
+        "astro",
+        "biz"
+      ],
+      "summary": "A mysterious signal from Uranus sparks scientific interest across the system.",
+      "next_beats": [
+        "source identification",
+        "joint expedition planned"
       ]
     }
   ],
   "irsi_forecast": [
     {
-      "sector": "PACIFIC RIM",
-      "lat": -29,
-      "lon": 139,
-      "eta_minutes": 2.1,
-      "severity": "severe"
-    },
-    {
-      "sector": "EAST ASIA",
-      "lat": 36,
-      "lon": 140,
-      "eta_minutes": 5.3,
-      "severity": "moderate"
-    },
-    {
-      "sector": "SIBERIAN PLATE",
-      "lat": 65,
-      "lon": 95,
-      "eta_minutes": 7.9,
+      "sector": "GREENLAND",
+      "lat": 72,
+      "lon": -40,
+      "eta_minutes": 5.1,
       "severity": "light"
     },
     {
-      "sector": "INDIAN OCEAN",
+      "sector": "SINDH",
+      "lat": 25,
+      "lon": 68,
+      "eta_minutes": 7.3,
+      "severity": "moderate"
+    },
+    {
+      "sector": "INDUSTRIAL_BELT",
+      "lat": 53,
+      "lon": -2,
+      "eta_minutes": 9.2,
+      "severity": "light"
+    },
+    {
+      "sector": "SOUTH_PACIFIC",
       "lat": -20,
-      "lon": 85,
-      "eta_minutes": 9.4,
+      "lon": 170,
+      "eta_minutes": 14.7,
       "severity": "moderate"
     }
   ],
   "ledger": {
-    "issue_3": [
-      "Ganymede makes a strategic countermove by offering freight subsidies to bypass Mars gate tolls.",
-      "Meteor showers continue to intensify over East Asia, causing further disruptions in communication.",
-      "First Solar Bank stabilizes following the currency wobble; confidence in Woolong restored.",
-      "A temporary closure of Ganymede Gate considered due to ongoing stability concerns.",
-      "The Quiet Brothers spotted near Titan; new cowboy interest sparks pursuit.",
-      "Forecast missed another impact in the Siberian Plate; calls for algorithm adjustments.",
-      "Oona Lee, a Venusian artist, gains attention for her floating biome sculptures inspired by Venusian spore clouds.",
-      "Gina Motors announces the expansion of its production line to accommodate growing demand from Mars and beyond."
-    ],
-    "issue_4": [
-      "Mars increases trade pressure on Ganymede by imposing tariffs on oceanic products.",
-      "Meteor showers over Indian Ocean cause unexpected sea level shifts, prompting emergency protocols.",
-      "RedDragon syndicate attempts to manipulate First Solar Bank's stock through insider trading; ISSP investigates.",
-      "Ganymede Gate's temporary closure extended as further inspections are conducted.",
-      "The Quiet Brothers narrowly escape capture on Titan; tension mounts among bounty hunters.",
-      "IRSI forecasts a severe impact near the Siberian Plate but issues remain with accuracy.",
-      "Navid Anwar, an Io-based terraforming technician, gains recognition for pioneering a new soil recycling method.",
-      "Venusian company, SporeTech, announces a breakthrough in controlling Venusian spore clouds."
-    ],
     "issue_5": [
       "Mars intensifies space tensions, seizing a Ganymede cargo ship in a disputed zone.",
       "Meteor showers continue to wreak havoc, this time hitting the Pacific Rim with force.",
@@ -441,6 +435,26 @@
       "IRSI successfully predicts a potential impact over East Asia, regaining trust.",
       "Asha Patel, a Belt miner, awarded for innovative safety measures after rescuing a crew during an asteroid collapse.",
       "Helios Solar Freight partners with Mars Coalition to streamline off-world logistics amid gate concerns."
+    ],
+    "issue_6": [
+      "Ganymede retaliates by capturing a Mars freight vessel in a bold countermove.",
+      "Meteor showers ease over Pacific Rim, leading to a temporary respite for the region.",
+      "Gina Motors announces new facility on Mars to meet rising demand, boosting investments.",
+      "ISSP identifies potential lead on Ganymede Gate saboteur, boosting security confidence.",
+      "The Quiet Brothers are captured near Titan in a dramatic cowboy-led operation.",
+      "IRSI forecasts a severe impact near Mediterranean, but prediction accuracy remains an issue.",
+      "New feature: Mario Conti, a dome farmer on Venus, advocates for spore-resistant crops.",
+      "Cherious Medical pushes for new pharmaceutical markets on Earth amidst health crises."
+    ],
+    "issue_7": [
+      "A mysterious signal from Uranus sparks scientific interest across the system.",
+      "Rainfall increases unexpectedly near the Mediterranean due to a meteorological anomaly.",
+      "Gina Motors' Mars facility faces delays in supply chain due to increased tariffs on Belt imports.",
+      "Ganymede Gate's potential saboteur identified as a rogue element within the Mars Coalition.",
+      "Sister Annalise Voss reportedly seen in Io's underground markets, prompting a new wave of bounty hunter activity.",
+      "IRSI's forecast accuracy improves, predicting a light meteor impact over Greenland.",
+      "Kaito Murakami, a drone operator on Callisto, captures stunning footage of a rare meteor shower.",
+      "Lumen Relay Co. partners with Helios Solar Freight to enhance communication links between Earth and Mars."
     ]
   }
 }

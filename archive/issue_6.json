@@ -2,94 +2,81 @@
   "issue_meta": {
     "volume": 1,
     "issue": 6,
-    "edition_label": "Weekly Report"
+    "edition_label": "Standard Edition"
   },
   "articles": [
     {
       "section": "astro",
-      "headline": "Ganymede Strengthens Ties with Venus as Mars Expands",
-      "byline": "ï¿½ Woolong Wire / Astro",
-      "body": "Ganymede is countering Mars' aggressive space development projects by forging strategic partnerships with the burgeoning tech sectors on Venus. This move is seen as an attempt to balance the increasing influence of Mars in the solar system. \"We believe in mutually beneficial collaborations that will enhance technological advancements for all involved,\" said Elara Io, spokesperson for the Ganymede Council. The collaboration comes amidst heightened tensions, as Mars persists in its expansionist endeavors, increasing the stakes in the region's geopolitical landscape.",
-      "image_brief": "REQUEST: Art depicting Venusian tech hubs collaboratively engaging with Ganymede representatives, with a backdrop of interplanetary trade routes."
+      "headline": "Ganymede Seizes Mars Cargo Ship Amid Growing Tensions",
+      "byline": "— Woolong Wire / Astro",
+      "body": "In a significant escalation of tensions, Ganymede forces have captured a Mars freight vessel, marking a bold countermove in the ongoing rivalry between the two colonies. The freighter, carrying essential minerals, was intercepted while en route to Mars. \"Our actions are a necessary response to Mars' continual provocations,\" stated Ganymede's Foreign Affairs Spokesperson, Dana Voss. Mars officials have condemned the act, citing it as an 'unjustified hostility' that endangers interplanetary trade. Analysts warn that continued friction may lead to third-party intervention if not resolved diplomatically.",
+      "image_brief": "WANTED: dynamic shot of Ganymede ships surrounding a Mars freight vessel. Emphasis on tension and scale, capturing the drama of the capture."
     },
     {
       "section": "earth",
-      "headline": "Meteor Strikes Intensify Earth's Migration Push to Mars",
-      "byline": "ï¿½ Woolong Wire / Earth",
-      "body": "Increased meteor impacts on Earth are compounding existing migration pressures, prompting a surge in emergency support from Mars. The Martian infrastructure is feeling the strain of this increased influx, with emergency facilities being pushed to their limits. \"We're doing everything we can to assist our fellow Earthlings in this time of need,\" said Martian Infrastructure Minister Tessa Marlowe. The situation highlights both the challenges and opportunities of interplanetary cooperation amid natural disasters.",
-      "image_brief": "NEEDED: A realistic portrayal of a Martian emergency housing facility bustling with new Earth arrivals, under the shadow of a looming meteor impact."
+      "headline": "Meteor Showers Ease, Offering Respite for the Pacific Rim",
+      "byline": "— Woolong Wire / Earth",
+      "body": "The Pacific Rim is experiencing a temporary respite as meteor showers, which have plagued the region, have eased. This natural pause is allowing restoration efforts to progress and communications networks to stabilize. \"The relief couldn't come at a better time,\" said Pacific Coordinator Hiroshi Tanaka, highlighting how the reprieve is aiding in the battered economy's stabilization.",
+      "image_brief": "WANTED: serene, panoramic view of the Pacific Rim under a clear night sky, remnants of meteors faintly visible. Seeking tranquility and space."
     },
     {
       "section": "econ",
-      "headline": "ISSP Moves to Stabilize Woolong Amid Building Confidence",
-      "byline": "ï¿½ Woolong Wire / Econ",
-      "body": "The Inter-Solar System Police (ISSP) has unveiled new measures aimed at stabilizing the Woolong, bolstering confidence in the currency. According to ISSP Economic Analyst Jin Watanabe, \"These measures are necessary to ensure the Woolong's value remains steady as market forces fluctuate.\" The announcement has seen a positive reception from financial markets, which are increasingly viewing ISSP as a stabilizing presence in the economic landscape.",
-      "image_brief": "WANTED: An image of a bustling financial district with traders reacting to positive news about the Woolong's stability, capturing the mood of cautious optimism."
+      "headline": "Gina Motors Expands on Mars Amid Rising Demand",
+      "byline": "— Woolong Wire / Econ",
+      "body": "Gina Motors has announced plans to establish a new manufacturing facility on Mars, aimed at meeting increasing demand for its vehicles. The facility is expected to bolster local employment and expand economic activity in the region. \"Mars is a burgeoning market with untapped potential,\" said CEO Alana Friese. The move is anticipated to heighten competition with Venus, where similar industrial efforts are underway.",
+      "image_brief": "WANTED: artistic rendering of futuristic vehicle assembly lines on Mars. Include vibrant industrial scenes, showcasing technological advancement."
     },
     {
       "section": "gate",
-      "headline": "Ganymede Gate Sabotage Linked to Wider Syndicate Conspiracy",
-      "byline": "ï¿½ Woolong Wire / Gate",
-      "body": "An analysis has revealed that the recent sabotage at the Ganymede Gate is part of a larger syndicate-linked conspiracy. ISSP investigators suggest the sabotage was intended to disrupt trade and cause chaos in the sector. \"We have increased patrols and are focusing resources on dismantling these illicit networks,\" ISSP Chief Inspector Riko Tanaka stated. The discovery has led to heightened vigilance and increased bounty board activity.",
-      "image_brief": "SEEKING: A tense, atmospheric image of ISSP officers investigating the damaged sections of the Ganymede Gate, with syndicate graffiti visible."
+      "headline": "ISSP Closes in on Ganymede Gate Saboteur",
+      "byline": "— Woolong Wire / Gate",
+      "body": "The ISSP has reportedly gained a lead on the suspect responsible for the recent sabotage of Ganymede's gate. This development is enhancing confidence in security operations. \"We're closing the net,\" said Commander Elena Persson of the ISSP, emphasizing the renewed focus on syndicate-related investigations. Officials are optimistic about a timeline for reopening.",
+      "image_brief": "WANTED: close-up of ISSP command center in action, screens displaying known saboteurs. Capture a sense of urgency and high-tech surveillance."
     },
     {
-      "section": "citizen",
-      "headline": "Leo Feng: Belt Miner Uncovers Rare Finds Amidst Turmoil",
-      "byline": "ï¿½ Woolong Wire / Citizen",
-      "body": "Amongst the chaos of syndicate recruitment efforts, Belt salvager Leo Feng has made headlines with the discovery of rare mineral deposits in the Asteroid Belt. \"It's a risky job, but the rewards can be worth it,\" Feng shared. The Belt's economy remains complex, with salvagers like Feng navigating both opportunities and dangers. His story highlights the resilience and resourcefulness required to thrive in this challenging profession.",
-      "image_brief": "REQUEST: A dynamic portrait of Leo Feng at work in the Belt, surrounded by the harsh beauty of asteroids and his mining equipment."
-    },
-    {
-      "section": "biz",
-      "headline": "Red Horizon Robotics: Pioneering Mars' Autonomous Future",
-      "byline": "ï¿½ Woolong Wire / Biz",
-      "body": "Mars-based startup Red Horizon Robotics is breaking new ground in autonomous rover systems, drawing significant attention and investment. \"Our technology could revolutionize planetary exploration and mining,\" CEO Kara Lin declared. The company's innovations are fueling competition in Mars' tech sector and sparking interest from Venusian trade partners. With these advancements, Red Horizon Robotics is positioning itself as a leader in interplanetary technology.",
-      "image_brief": "NEEDED: An image of Red Horizon Robotics' autonomous rovers being tested in a Martian landscape, showcasing their cutting-edge design and technology."
+      "section": "irsi",
+      "headline": "IRSI Warns of Severe Mediterranean Impact, Accuracy Under Scrutiny",
+      "byline": "— Woolong Wire / IRSI",
+      "body": "The Interplanetary Risk and Stability Institute (IRSI) has issued a forecast warning of severe meteor impacts near the Mediterranean. Despite this, there remains ongoing scrutiny regarding prediction accuracy. \"We are improving our systems to enhance precision,\" said Dr. Leila Abadi, IRSI Lead Scientist. The forecast has placed pressure on local regions to prepare for potential impact.",
+      "image_brief": "WANTED: dramatic illustration of meteor approaching the Mediterranean coastline, highlighting both natural beauty and looming threat."
     }
   ],
   "bounties": [
     {
-      "name": "Marina Lu",
-      "line": "Rising star Marina Lu apprehends notorious thief on Ganymede, earning accolades.",
-      "reward": 50000,
-      "status": "open"
+      "name": "The Quiet Brothers",
+      "line": "Captured near Titan in a cowboy-led operation.",
+      "reward": 5000000,
+      "status": "closed"
     }
   ],
   "oldmen_column": {
-    "headline": "Remembering What We Forgot",
-    "body": "Now, did you hear about this new rover business on Mars? Reminds me of when we used to build things with our own hands. Now they got these robots doing everything. But don't you worry, I'm sure in a few years theyï¿½ll be fixing their own mistakes too. Remember when the gates were new? Half the time they didn't work, and the other half you were already late. Now, the news is all about cowboys catching thieves! Can you imagine? It's like we're living in those old stories we used to tell. Well, that's progress for you. At least Earth's meteors keep things interesting, keeps people moving, if you ask me."
-  },
-  "woolong_per": {
-    "USD": 0.75,
-    "EUR": 0.68,
-    "JPY": 105,
-    "GBP": 0.55
+    "headline": "Health Pills, Meteor Chills, and the Blueberry Thrills",
+    "body": "You know, back in our days, folks enjoyed simpler times with a good loaf of bread. Now they talk of health pills from Cherious Medical promising longer lives. Well, I say, what good are longer days without flavor, like a ripe blueberry pie? Meteor showers have calmed, and that's nice—gives us time to remember the taste of things that matter. What's next, you ask? Perhaps a toast to the old days and an extra slice of pie for good measure."
   },
   "stocks": [
     {
       "ticker": "GINA",
-      "price": 152,
-      "trend": "down"
-    },
-    {
-      "ticker": "HEXA",
-      "price": 98,
+      "price": 134,
       "trend": "up"
     },
     {
+      "ticker": "HEXA",
+      "price": 57,
+      "trend": "down"
+    },
+    {
       "ticker": "PIPP",
-      "price": 120,
+      "price": 89,
       "trend": "up"
     }
   ],
   "irsi_forecast": [
     {
-      "sector": "Ganymede",
-      "lat": 50.1,
-      "lon": 125.9,
-      "eta_minutes": 30,
-      "severity": "moderate"
+      "sector": "Mediterranean",
+      "lat": 36,
+      "lon": 18,
+      "eta_minutes": 120,
+      "severity": "severe"
     }
   ]
 }
