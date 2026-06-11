@@ -301,11 +301,9 @@
   @media(max-width:780px){
     .langcol{position:static;max-width:100%;justify-content:center;padding:6px 0 2px;}
     .masthead h1{font-size:38px;}
-    .block.irsi .hd span:first-child{font-size:10px;letter-spacing:0;}
-    .mapbox svg{max-height:160px;}
-    .countdown{font-size:11px;padding:4px;}
-    .countdown b{font-size:15px;}
-    .irsivoice{font-size:12px;}
+    .block.irsi .hd{flex-wrap:wrap;gap:4px;}
+    .countdown{font-size:11px;padding:4px;display:flex;flex-direction:column;gap:2px;}
+    .irsivoice{font-size:12px;padding:6px 4px;}
     .ftable{font-size:11px;}
     .ftable th,.ftable td{padding:3px 4px;}
     .coords{font-size:9px;}
@@ -457,7 +455,7 @@
 
       <!-- IRSI -->
       <section class="view" data-v="irsi">
-        <div class="block irsi"><div class="hd"><span>Independent Ring of Satellite Intelligence — Impact Forecast &amp; Earth Mapping</span><span class="blink">● LIVE</span></div><div class="body" style="padding:8px;">
+        <div class="block irsi"><div class="hd"><span>IRSI — Impact Forecast</span><span class="blink">● LIVE</span></div><div class="body" style="padding:8px;">
           <div class="countdown">NEXT IMPACT IN <b id="cd">--:--:--</b> · SECTOR <span id="sector">—</span></div>
           <div class="mapbox">
             <svg viewBox="0 0 360 180" preserveAspectRatio="xMidYMid meet">
