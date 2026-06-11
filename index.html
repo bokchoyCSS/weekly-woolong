@@ -261,7 +261,7 @@
   .coffee a{display:block;text-decoration:none;color:var(--yellow);padding:9px 6px;font-size:13px;}
   .coffee a:hover{background:var(--yellow);color:#000;}
 
-  .countdown{font-size:13px;color:var(--red);text-align:center;padding:6px;border:1px solid var(--red);border-bottom:none;}
+  .countdown{font-size:13px;color:var(--red);text-align:center;padding:6px;border:1px solid var(--red);border-bottom:none;word-break:break-word;line-height:1.6;}
   .countdown b{color:var(--yellow);font-size:20px;}
   .mapbox{border:1px solid var(--red);background:#070000;position:relative;}
   .mapbox svg{display:block;width:100%;height:auto;}
@@ -273,8 +273,9 @@
   .coords{font-size:10px;color:var(--red);white-space:nowrap;overflow:hidden;background:#000;border:1px solid var(--red);border-top:none;}
   .coords span{display:inline-block;padding-left:100%;animation:scroll 24s linear infinite;}
   .irsivoice{font-family:var(--serif);font-style:italic;color:var(--green-dim);font-size:14px;padding:8px 4px;border:1px solid var(--red);border-top:none;}
-  .ftable{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
-  .ftable th,.ftable td{border:1px solid var(--red);padding:4px 6px;text-align:left;}
+  .ftable-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px;}
+  .ftable{width:100%;border-collapse:collapse;font-size:12px;min-width:280px;}
+  .ftable th,.ftable td{border:1px solid var(--red);padding:4px 6px;text-align:left;white-space:nowrap;}
   .ftable th{color:var(--red);}
 
 
@@ -466,8 +467,7 @@
           </div>
           <div class="coords"><span id="coordfeed">ACQUIRING COORDINATES…</span></div>
           <div class="irsivoice" id="irsiline">Glad to be of service — Independent Ring of Satellite Intelligence</div>
-          <table class="ftable"><thead><tr><th>SECTOR</th><th>LAT</th><th>LON</th><th>ETA</th></tr></thead><tbody id="ftbody"></tbody></table>
-          <p style="font-size:11px;color:var(--green-dim);margin-top:8px;font-family:var(--mono);">Map is a built-in SVG so impacts plot on real coordinates with no external asset. Swap in any licensed map raster on deploy if you want photographic terrain.</p>
+          <div class="ftable-wrap"><table class="ftable"><thead><tr><th>SECTOR</th><th>LAT</th><th>LON</th><th>ETA</th></tr></thead><tbody id="ftbody"></tbody></table></div>
         </div></div>
       </section>
 
