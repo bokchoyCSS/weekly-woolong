@@ -1,0 +1,18 @@
+{
+  "name": "The Weekly Woolong",
+  "short_name": "TWW",
+  "description": "An interactive in-universe newspaper set in the Cowboy Bebop universe.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#33ff77",
+  "icons": [
+    {
+      "src": "images/AppIcon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
